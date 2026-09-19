@@ -26,14 +26,15 @@ for (const plugin of catalog.plugins) {
   if (!entry || marketplace.plugins.length !== 1) {
     throw new Error(`${plugin.id}: repository marketplace must contain exactly one plugin`);
   }
-  const logoUrl = `https://cdn.jsdelivr.net/gh/${plugin.repository}@main/${plugin.logo}`;
+  const releaseRef = `v${plugin.version}`;
+  const logoUrl = `https://cdn.jsdelivr.net/gh/${plugin.repository}@${releaseRef}/${plugin.logo}`;
   marketplace.interface ??= {};
   marketplace.interface.displayName = plugin.displayName;
   entry.name = plugin.id;
   entry.source = {
     source: "url",
     url: `https://github.com/${plugin.repository}.git`,
-    ref: "main"
+    ref: releaseRef
   };
   entry.policy = { installation: "AVAILABLE", authentication: "ON_USE" };
   entry.category = plugin.category;

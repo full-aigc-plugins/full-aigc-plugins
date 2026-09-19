@@ -234,6 +234,10 @@ for (let index = 0; index < catalog.plugins.length; index += 1) {
       if (entry.name !== plugin.id) errors.push(`${plugin.id}: repository marketplace name is ${entry.name}`);
       if (entry.description !== plugin.description) errors.push(`${plugin.id}: repository marketplace description differs`);
       if (entry.version !== plugin.version) errors.push(`${plugin.id}: repository marketplace version differs`);
+      if (entry.source?.ref !== `v${plugin.version}`) errors.push(`${plugin.id}: repository marketplace source is not pinned to v${plugin.version}`);
+      const immutableLogoPrefix = `https://cdn.jsdelivr.net/gh/${plugin.repository}@v${plugin.version}/`;
+      if (!entry.icon?.startsWith(immutableLogoPrefix)) errors.push(`${plugin.id}: repository marketplace icon is not release-pinned`);
+      if (!entry.interface?.logo?.startsWith(immutableLogoPrefix)) errors.push(`${plugin.id}: repository marketplace logo is not release-pinned`);
       if (entry.interface?.displayName !== plugin.displayName) errors.push(`${plugin.id}: repository marketplace displayName differs`);
       if (entry.interface?.shortDescription !== plugin.shortDescription) errors.push(`${plugin.id}: repository marketplace shortDescription differs`);
       if (repositoryMarketplace.interface?.displayName !== plugin.displayName) errors.push(`${plugin.id}: marketplace displayName differs`);
