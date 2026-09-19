@@ -1,0 +1,189 @@
+{
+  "name": "full-aigc-plugins",
+  "displayName": "Full AIGC 插件",
+  "description": "Full AIGC plugin marketplace for Codex, ZCode, and Kimi Code: image, video, audio, music, 3D, and multimodal content creation.",
+  "plugins": [
+    {
+      "name": "maya-design",
+      "source": {
+        "source": "github",
+        "repo": "partme-ai/partme-maya-plugin",
+        "ref": "main"
+      },
+      "description": "Inspect Autodesk Maya scenes, create reversible Playblasts, and produce verified Jimeng links.",
+      "version": "0.1.2",
+      "category": "Creativity",
+      "tags": [
+        "maya",
+        "3d",
+        "playblast"
+      ],
+      "icon": "https://raw.githubusercontent.com/partme-ai/partme-maya-plugin/main/assets/official-logo.png",
+      "strict": true
+    },
+    {
+      "name": "blender-design",
+      "source": {
+        "source": "github",
+        "repo": "partme-ai/partme-blender-plugin",
+        "ref": "main"
+      },
+      "description": "Design, review, and export Blender scenes through controlled operations, visual milestones, and recovery checkpoints.",
+      "version": "0.3.1",
+      "category": "Creativity",
+      "tags": [
+        "blender",
+        "3d",
+        "previs"
+      ],
+      "icon": "https://raw.githubusercontent.com/partme-ai/partme-blender-plugin/main/assets/official-logo.png",
+      "strict": true
+    },
+    {
+      "name": "comfy-design",
+      "source": {
+        "source": "github",
+        "repo": "partme-ai/partme-comfy-plugin",
+        "ref": "main"
+      },
+      "description": "Generate images, video, audio, and 3D, search models and nodes, and run Comfy Cloud workflows through MCP.",
+      "version": "0.1.1",
+      "category": "Creativity",
+      "tags": [
+        "comfy",
+        "comfyui",
+        "workflow"
+      ],
+      "icon": "https://raw.githubusercontent.com/partme-ai/partme-comfy-plugin/main/assets/official-logo.png",
+      "strict": true
+    },
+    {
+      "name": "dreamina-canvas",
+      "source": {
+        "source": "github",
+        "repo": "partme-ai/partme-dreamina-canvas",
+        "ref": "main"
+      },
+      "description": "Build and run Dreamina Canvas node graphs and timelines with approval-aware execution, recovery, and verified assets.",
+      "version": "0.1.3",
+      "category": "Creativity",
+      "tags": [
+        "dreamina",
+        "canvas",
+        "timeline"
+      ],
+      "icon": "https://raw.githubusercontent.com/partme-ai/partme-dreamina-canvas/main/assets/official-logo.png",
+      "strict": true
+    },
+    {
+      "name": "dreamina-design",
+      "source": {
+        "source": "github",
+        "repo": "partme-ai/partme-dreamina-design",
+        "ref": "main"
+      },
+      "description": "Create and edit Dreamina images and videos with approval-aware, resumable operations and verified downloads.",
+      "version": "0.4.1",
+      "category": "Creativity",
+      "tags": [
+        "dreamina",
+        "seedance",
+        "text2video"
+      ],
+      "icon": "https://raw.githubusercontent.com/partme-ai/partme-dreamina-design/main/assets/logo-approved.png",
+      "strict": true
+    },
+    {
+      "name": "image-factory",
+      "source": {
+        "source": "github",
+        "repo": "partme-ai/partme-image-factory",
+        "ref": "main"
+      },
+      "description": "Discover prompts, batch-produce and evaluate images, and record verified artifact receipts.",
+      "version": "0.1.3",
+      "category": "Creativity",
+      "tags": [
+        "image",
+        "batch",
+        "receipts"
+      ],
+      "icon": "https://raw.githubusercontent.com/partme-ai/partme-image-factory/main/assets/logo-approved.png",
+      "strict": true
+    },
+    {
+      "name": "jianying-edit",
+      "source": {
+        "source": "github",
+        "repo": "partme-ai/partme-jianying-plugin",
+        "ref": "main"
+      },
+      "description": "Native, fully editable JianYing drafts via the vendored Apache-2.0 pyJianYingDraft engine plus the built-in Rust jycut CLI: multi-track video/text/audio, the 453-name transition catalog, keyframes, masks, styled text and SRT captions; optional fork pro-tier for native export and existing-draft editing. No account, no upload.",
+      "version": "0.10.1",
+      "category": "Creativity",
+      "tags": [
+        "jianying",
+        "capcut",
+        "video-editing"
+      ],
+      "icon": "https://raw.githubusercontent.com/partme-ai/partme-jianying-plugin/main/assets/official-logo.png",
+      "strict": true
+    },
+    {
+      "name": "minimax-design",
+      "source": {
+        "source": "github",
+        "repo": "partme-ai/partme-minimax-design",
+        "ref": "main"
+      },
+      "description": "Generate MiniMax H3 videos with env-var auth, first/last-frame FL2VA anchoring, resumable v2 queries, 11 vendored skills, plus commands, a prompt-writer subagent, and cross-platform credential setup.",
+      "version": "0.4.2",
+      "category": "Creativity",
+      "tags": [
+        "minimax",
+        "hailuo",
+        "video-generation"
+      ],
+      "icon": "https://raw.githubusercontent.com/partme-ai/partme-minimax-design/main/assets/official-logo.png",
+      "strict": true
+    },
+    {
+      "name": "video-factory",
+      "source": {
+        "source": "github",
+        "repo": "partme-ai/partme-video-factory",
+        "ref": "main"
+      },
+      "description": "Automatic video editing, composition, synchronized review, recovery, and verified media receipts.",
+      "version": "0.1.2",
+      "category": "Creativity",
+      "tags": [
+        "video",
+        "editing",
+        "receipts"
+      ],
+      "icon": "https://raw.githubusercontent.com/partme-ai/partme-video-factory/main/assets/logo-approved.png",
+      "strict": true
+    },
+    {
+      "name": "volcengine-design",
+      "source": {
+        "source": "github",
+        "repo": "partme-ai/partme-volcengine-design",
+        "ref": "main"
+      },
+      "description": "Volcengine creation suite — Doubao ASR transcription with millisecond word timelines, TTS narration, Seedream images, Seedance video with white-model first/last-frame anchoring.",
+      "version": "0.1.0",
+      "category": "Creativity",
+      "tags": [
+        "volcengine",
+        "doubao",
+        "asr",
+        "tts",
+        "video"
+      ],
+      "icon": "https://raw.githubusercontent.com/partme-ai/partme-volcengine-design/main/assets/official-logo.png",
+      "strict": true
+    }
+  ]
+}
