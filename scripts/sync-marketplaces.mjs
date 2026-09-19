@@ -11,7 +11,7 @@ const catalog = JSON.parse(fs.readFileSync(path.join(root, "catalog.json"), "utf
 const mode = process.argv.includes("--write") ? "write" : "check";
 
 const rawLogo = (plugin) =>
-  `https://raw.githubusercontent.com/${plugin.repository}/main/${plugin.logo}`;
+  `https://cdn.jsdelivr.net/gh/${plugin.repository}@main/${plugin.logo}`;
 
 const codex = {
   name: catalog.name,

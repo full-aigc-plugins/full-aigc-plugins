@@ -18,7 +18,7 @@
         "3d",
         "playblast"
       ],
-      "icon": "https://raw.githubusercontent.com/full-aigc-plugins/partme-maya-plugin/main/assets/official-logo.png",
+      "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/partme-maya-plugin@main/assets/official-logo.png",
       "strict": true
     },
     {
@@ -29,14 +29,14 @@
         "ref": "main"
       },
       "description": "Design, review, and export Blender scenes through controlled operations, visual milestones, and recovery checkpoints.",
-      "version": "0.3.1",
+      "version": "0.3.2",
       "category": "Creativity",
       "tags": [
         "blender",
         "3d",
         "previs"
       ],
-      "icon": "https://raw.githubusercontent.com/full-aigc-plugins/partme-blender-plugin/main/assets/official-logo.png",
+      "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/partme-blender-plugin@main/assets/official-logo.png",
       "strict": true
     },
     {
@@ -54,7 +54,7 @@
         "comfyui",
         "workflow"
       ],
-      "icon": "https://raw.githubusercontent.com/full-aigc-plugins/partme-comfy-plugin/main/assets/official-logo.png",
+      "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/partme-comfy-plugin@main/assets/official-logo.png",
       "strict": true
     },
     {
@@ -72,7 +72,7 @@
         "canvas",
         "timeline"
       ],
-      "icon": "https://raw.githubusercontent.com/full-aigc-plugins/partme-dreamina-canvas/main/assets/official-logo.png",
+      "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/partme-dreamina-canvas@main/assets/official-logo.png",
       "strict": true
     },
     {
@@ -90,7 +90,7 @@
         "seedance",
         "text2video"
       ],
-      "icon": "https://raw.githubusercontent.com/full-aigc-plugins/partme-dreamina-design/main/assets/logo-approved.png",
+      "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/partme-dreamina-design@main/assets/logo-approved.png",
       "strict": true
     },
     {
@@ -108,7 +108,7 @@
         "batch",
         "receipts"
       ],
-      "icon": "https://raw.githubusercontent.com/full-aigc-plugins/partme-image-factory/main/assets/logo-approved.png",
+      "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/partme-image-factory@main/assets/logo-approved.png",
       "strict": true
     },
     {
@@ -119,14 +119,14 @@
         "ref": "main"
       },
       "description": "Native, fully editable JianYing drafts via the vendored Apache-2.0 pyJianYingDraft engine plus the built-in Rust jycut CLI: multi-track video/text/audio, the 453-name transition catalog, keyframes, masks, styled text and SRT captions; optional fork pro-tier for native export and existing-draft editing. No account, no upload.",
-      "version": "0.11.0",
+      "version": "0.12.0",
       "category": "Creativity",
       "tags": [
         "jianying",
         "capcut",
         "video-editing"
       ],
-      "icon": "https://raw.githubusercontent.com/full-aigc-plugins/partme-jianying-plugin/main/assets/official-logo.png",
+      "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/partme-jianying-plugin@main/assets/official-logo.png",
       "strict": true
     },
     {
@@ -144,7 +144,7 @@
         "hailuo",
         "video-generation"
       ],
-      "icon": "https://raw.githubusercontent.com/full-aigc-plugins/partme-minimax-design/main/assets/official-logo.png",
+      "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/partme-minimax-design@main/assets/official-logo.png",
       "strict": true
     },
     {
@@ -162,7 +162,7 @@
         "editing",
         "receipts"
       ],
-      "icon": "https://raw.githubusercontent.com/full-aigc-plugins/partme-video-factory/main/assets/logo-approved.png",
+      "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/partme-video-factory@main/assets/logo-approved.png",
       "strict": true
     },
     {
@@ -182,7 +182,7 @@
         "tts",
         "video"
       ],
-      "icon": "https://raw.githubusercontent.com/full-aigc-plugins/partme-volcengine-design/main/assets/official-logo.png",
+      "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/partme-volcengine-design@main/assets/official-logo.png",
       "strict": true
     }
   ]

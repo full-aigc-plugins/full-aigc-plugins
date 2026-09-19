@@ -26,7 +26,7 @@ for (const plugin of catalog.plugins) {
   if (!entry || marketplace.plugins.length !== 1) {
     throw new Error(`${plugin.id}: repository marketplace must contain exactly one plugin`);
   }
-  const logoUrl = `https://raw.githubusercontent.com/${plugin.repository}/main/${plugin.logo}`;
+  const logoUrl = `https://cdn.jsdelivr.net/gh/${plugin.repository}@main/${plugin.logo}`;
   marketplace.interface ??= {};
   marketplace.interface.displayName = plugin.displayName;
   entry.name = plugin.id;

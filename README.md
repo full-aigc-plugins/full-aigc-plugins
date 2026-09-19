@@ -77,12 +77,12 @@ codex plugin add volcengine-design@full-aigc-plugins
 
 | 插件 | ID | 版本 | 定位 | 仓库 |
 |------|----|:----:|------|------|
-| 🧱 **Blender 制作** | `blender-design` | 0.3.1 | Blender 场景的受控设计、审阅与导出（视觉里程碑 + 恢复检查点） | [partme-blender-plugin](https://github.com/full-aigc-plugins/partme-blender-plugin) |
+| 🧱 **Blender 制作** | `blender-design` | 0.3.2 | Blender 场景的受控设计、审阅与导出（视觉里程碑 + 恢复检查点） | [partme-blender-plugin](https://github.com/full-aigc-plugins/partme-blender-plugin) |
 | 🎞️ **Comfy 生成** | `comfy-design` | 0.1.1 | Comfy Cloud 生成工作流（图像 / 视频 / 音频 / 3D） | [partme-comfy-plugin](https://github.com/full-aigc-plugins/partme-comfy-plugin) |
 | 🎨 **即梦画布** | `dreamina-canvas` | 0.1.3 | 结构化 Dreamina 画布与时间线的构建和运行（带审批与恢复） | [partme-dreamina-canvas](https://github.com/full-aigc-plugins/partme-dreamina-canvas) |
 | 🖼️ **即梦设计** | `dreamina-design` | 0.4.1 | 即梦图像与视频创作 | [partme-dreamina-design](https://github.com/full-aigc-plugins/partme-dreamina-design) |
 | 🏭 **图片工厂** | `image-factory` | 0.1.3 | 图像的发现、批量生产与评估闭环 | [partme-image-factory](https://github.com/full-aigc-plugins/partme-image-factory) |
-| ✂️ **剪映剪辑** | `jianying-edit` | 0.11.0 | pyJianYingDraft 驱动的剪映草稿原生引擎 | [partme-jianying-plugin](https://github.com/full-aigc-plugins/partme-jianying-plugin) |
+| ✂️ **剪映剪辑** | `jianying-edit` | 0.12.0 | pyJianYingDraft 驱动的剪映草稿原生引擎 | [partme-jianying-plugin](https://github.com/full-aigc-plugins/partme-jianying-plugin) |
 | 🎬 **Maya 制作** | `maya-design` | 0.1.2 | Maya 场景检查与可逆 Playblast，产出经核验的即梦链接 | [partme-maya-plugin](https://github.com/full-aigc-plugins/partme-maya-plugin) |
 | 🎵 **MiniMax 设计** | `minimax-design` | 0.4.2 | MiniMax H3 视频生成（白模首尾帧锚定） | [partme-minimax-design](https://github.com/full-aigc-plugins/partme-minimax-design) |
 | 🎥 **视频工厂** | `video-factory` | 0.1.2 | 视频的剪辑、合成、审校与校验 | [partme-video-factory](https://github.com/full-aigc-plugins/partme-video-factory) |
