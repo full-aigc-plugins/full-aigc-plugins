@@ -48,7 +48,7 @@
 ### Codex
 
 ```bash
-codex plugin marketplace add full-aigc-plugins/plugins
+codex plugin marketplace add partme-ai/full-aigc-plugins
 codex plugin add blender-design@full-aigc-plugins
 codex plugin add comfy-design@full-aigc-plugins
 codex plugin add dreamina-canvas@full-aigc-plugins
@@ -63,12 +63,12 @@ codex plugin add volcengine-design@full-aigc-plugins
 
 ### ZCode
 
-打开 设置 → 插件 → 创建 → 添加插件市场，输入 `full-aigc-plugins/plugins`，然后在个人市场分区中安装。
+打开 设置 → 插件 → 创建 → 添加插件市场，输入 `partme-ai/full-aigc-plugins`，然后在个人市场分区中安装。
 
 ### Kimi Code CLI
 
 ```text
-/plugins marketplace https://raw.githubusercontent.com/full-aigc-plugins/plugins/main/kimi-marketplace.json
+/plugins marketplace https://raw.githubusercontent.com/partme-ai/full-aigc-plugins/main/kimi-marketplace.json
 ```
 
 ---
