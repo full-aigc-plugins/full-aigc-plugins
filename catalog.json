@@ -6,8 +6,8 @@
   "planningRepositories": [
     {
       "name": "PartMe.AI Cine Planning",
-      "localDirectory": "partme-cine-planning",
-      "repository": "full-aigc-plugins/partme-cine-planning",
+      "localDirectory": "cine-planning",
+      "repository": "full-aigc-plugins/cine-planning",
       "status": "design_baseline_not_released",
       "modules": [
         "director",
@@ -20,8 +20,8 @@
     {
       "id": "maya-design",
       "displayName": "Autodesk Maya Design",
-      "repository": "full-aigc-plugins/partme-maya-plugin",
-      "localDirectory": "partme-maya-plugin",
+      "repository": "full-aigc-plugins/maya-design-plugin",
+      "localDirectory": "maya-design-plugin",
       "version": "0.1.2",
       "description": "Inspect Autodesk Maya scenes, create reversible Playblasts, and produce verified Jimeng links.",
       "shortDescription": "Inspect scenes and create reversible Playblasts",
@@ -36,8 +36,8 @@
     {
       "id": "blender-design",
       "displayName": "Blender Design",
-      "repository": "full-aigc-plugins/partme-blender-plugin",
-      "localDirectory": "partme-blender-plugin",
+      "repository": "full-aigc-plugins/blender-design-plugin",
+      "localDirectory": "blender-design-plugin",
       "version": "0.3.2",
       "description": "Design, review, and export Blender scenes through controlled operations, visual milestones, and recovery checkpoints.",
       "shortDescription": "Design, review, and export Blender projects",
@@ -52,8 +52,8 @@
     {
       "id": "comfy-design",
       "displayName": "Comfy Design",
-      "repository": "full-aigc-plugins/partme-comfy-plugin",
-      "localDirectory": "partme-comfy-plugin",
+      "repository": "full-aigc-plugins/comfy-design-plugin",
+      "localDirectory": "comfy-design-plugin",
       "version": "0.1.1",
       "description": "Generate images, video, audio, and 3D, search models and nodes, and run Comfy Cloud workflows through MCP.",
       "shortDescription": "Comfy Cloud generation workflows",
@@ -68,8 +68,8 @@
     {
       "id": "dreamina-canvas",
       "displayName": "Dreamina Canvas",
-      "repository": "full-aigc-plugins/partme-dreamina-canvas",
-      "localDirectory": "partme-dreamina-canvas",
+      "repository": "full-aigc-plugins/dreamina-canvas-plugin",
+      "localDirectory": "dreamina-canvas-plugin",
       "version": "0.1.3",
       "description": "Build and run Dreamina Canvas node graphs and timelines with approval-aware execution, recovery, and verified assets.",
       "shortDescription": "Build and run structured Dreamina canvases",
@@ -84,8 +84,8 @@
     {
       "id": "dreamina-design",
       "displayName": "Dreamina Design",
-      "repository": "full-aigc-plugins/partme-dreamina-design",
-      "localDirectory": "partme-dreamina-design",
+      "repository": "full-aigc-plugins/dreamina-design-plugin",
+      "localDirectory": "dreamina-design-plugin",
       "version": "0.4.1",
       "description": "Create and edit Dreamina images and videos with approval-aware, resumable operations and verified downloads.",
       "shortDescription": "Create images and videos with Dreamina",
@@ -100,8 +100,8 @@
     {
       "id": "image-factory",
       "displayName": "Image Factory",
-      "repository": "full-aigc-plugins/partme-image-factory",
-      "localDirectory": "partme-image-factory",
+      "repository": "full-aigc-plugins/image-factory-plugin",
+      "localDirectory": "image-factory-plugin",
       "version": "0.1.3",
       "description": "Discover prompts, batch-produce and evaluate images, and record verified artifact receipts.",
       "shortDescription": "Discover, batch-produce, and evaluate images",
@@ -116,8 +116,8 @@
     {
       "id": "jianying-edit",
       "displayName": "JianYing Edit",
-      "repository": "full-aigc-plugins/partme-jianying-plugin",
-      "localDirectory": "partme-jianying-plugin",
+      "repository": "full-aigc-plugins/jianying-edit-plugin",
+      "localDirectory": "jianying-edit-plugin",
       "version": "0.12.0",
       "description": "Native, fully editable JianYing drafts via the vendored Apache-2.0 pyJianYingDraft engine plus the built-in Rust jycut CLI: multi-track video/text/audio, the 453-name transition catalog, keyframes, masks, styled text and SRT captions; optional fork pro-tier for native export and existing-draft editing. No account, no upload.",
       "shortDescription": "pyJianYingDraft-powered native draft engine",
@@ -132,8 +132,8 @@
     {
       "id": "minimax-design",
       "displayName": "MiniMax Design",
-      "repository": "full-aigc-plugins/partme-minimax-design",
-      "localDirectory": "partme-minimax-design",
+      "repository": "full-aigc-plugins/minimax-design-plugin",
+      "localDirectory": "minimax-design-plugin",
       "version": "0.4.2",
       "description": "Generate MiniMax H3 videos with env-var auth, first/last-frame FL2VA anchoring, resumable v2 queries, 11 vendored skills, plus commands, a prompt-writer subagent, and cross-platform credential setup.",
       "shortDescription": "Generate H3 videos with MiniMax — white-model first/last-frame anchoring",
@@ -148,8 +148,8 @@
     {
       "id": "video-factory",
       "displayName": "Video Factory",
-      "repository": "full-aigc-plugins/partme-video-factory",
-      "localDirectory": "partme-video-factory",
+      "repository": "full-aigc-plugins/video-factory-plugin",
+      "localDirectory": "video-factory-plugin",
       "version": "0.1.2",
       "description": "Automatic video editing, composition, synchronized review, recovery, and verified media receipts.",
       "shortDescription": "Edit, compose, review, and verify videos",
@@ -164,8 +164,8 @@
     {
       "id": "volcengine-design",
       "displayName": "Volcengine Design",
-      "repository": "full-aigc-plugins/partme-volcengine-design",
-      "localDirectory": "partme-volcengine-design",
+      "repository": "full-aigc-plugins/volcengine-design-plugin",
+      "localDirectory": "volcengine-design-plugin",
       "version": "0.1.0",
       "description": "Volcengine creation suite — Doubao ASR transcription with millisecond word timelines, TTS narration, Seedream images, Seedance video with white-model first/last-frame anchoring.",
       "shortDescription": "Doubao ASR/TTS, image & video generation workflows",

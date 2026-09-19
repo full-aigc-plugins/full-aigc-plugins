@@ -7,7 +7,7 @@
       "name": "maya-design",
       "source": {
         "source": "github",
-        "repo": "full-aigc-plugins/partme-maya-plugin",
+        "repo": "full-aigc-plugins/maya-design-plugin",
         "ref": "main"
       },
       "description": "Inspect Autodesk Maya scenes, create reversible Playblasts, and produce verified Jimeng links.",
@@ -18,14 +18,14 @@
         "3d",
         "playblast"
       ],
-      "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/partme-maya-plugin@main/assets/official-logo.png",
+      "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/maya-design-plugin@main/assets/official-logo.png",
       "strict": true
     },
     {
       "name": "blender-design",
       "source": {
         "source": "github",
-        "repo": "full-aigc-plugins/partme-blender-plugin",
+        "repo": "full-aigc-plugins/blender-design-plugin",
         "ref": "main"
       },
       "description": "Design, review, and export Blender scenes through controlled operations, visual milestones, and recovery checkpoints.",
@@ -36,14 +36,14 @@
         "3d",
         "previs"
       ],
-      "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/partme-blender-plugin@main/assets/official-logo.png",
+      "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/blender-design-plugin@main/assets/official-logo.png",
       "strict": true
     },
     {
       "name": "comfy-design",
       "source": {
         "source": "github",
-        "repo": "full-aigc-plugins/partme-comfy-plugin",
+        "repo": "full-aigc-plugins/comfy-design-plugin",
         "ref": "main"
       },
       "description": "Generate images, video, audio, and 3D, search models and nodes, and run Comfy Cloud workflows through MCP.",
@@ -54,14 +54,14 @@
         "comfyui",
         "workflow"
       ],
-      "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/partme-comfy-plugin@main/assets/official-logo.png",
+      "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/comfy-design-plugin@main/assets/official-logo.png",
       "strict": true
     },
     {
       "name": "dreamina-canvas",
       "source": {
         "source": "github",
-        "repo": "full-aigc-plugins/partme-dreamina-canvas",
+        "repo": "full-aigc-plugins/dreamina-canvas-plugin",
         "ref": "main"
       },
       "description": "Build and run Dreamina Canvas node graphs and timelines with approval-aware execution, recovery, and verified assets.",
@@ -72,14 +72,14 @@
         "canvas",
         "timeline"
       ],
-      "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/partme-dreamina-canvas@main/assets/official-logo.png",
+      "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/dreamina-canvas-plugin@main/assets/official-logo.png",
       "strict": true
     },
     {
       "name": "dreamina-design",
       "source": {
         "source": "github",
-        "repo": "full-aigc-plugins/partme-dreamina-design",
+        "repo": "full-aigc-plugins/dreamina-design-plugin",
         "ref": "main"
       },
       "description": "Create and edit Dreamina images and videos with approval-aware, resumable operations and verified downloads.",
@@ -90,14 +90,14 @@
         "seedance",
         "text2video"
       ],
-      "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/partme-dreamina-design@main/assets/logo-approved.png",
+      "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/dreamina-design-plugin@main/assets/logo-approved.png",
       "strict": true
     },
     {
       "name": "image-factory",
       "source": {
         "source": "github",
-        "repo": "full-aigc-plugins/partme-image-factory",
+        "repo": "full-aigc-plugins/image-factory-plugin",
         "ref": "main"
       },
       "description": "Discover prompts, batch-produce and evaluate images, and record verified artifact receipts.",
@@ -108,14 +108,14 @@
         "batch",
         "receipts"
       ],
-      "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/partme-image-factory@main/assets/logo-approved.png",
+      "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/image-factory-plugin@main/assets/logo-approved.png",
       "strict": true
     },
     {
       "name": "jianying-edit",
       "source": {
         "source": "github",
-        "repo": "full-aigc-plugins/partme-jianying-plugin",
+        "repo": "full-aigc-plugins/jianying-edit-plugin",
         "ref": "main"
       },
       "description": "Native, fully editable JianYing drafts via the vendored Apache-2.0 pyJianYingDraft engine plus the built-in Rust jycut CLI: multi-track video/text/audio, the 453-name transition catalog, keyframes, masks, styled text and SRT captions; optional fork pro-tier for native export and existing-draft editing. No account, no upload.",
@@ -126,14 +126,14 @@
         "capcut",
         "video-editing"
       ],
-      "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/partme-jianying-plugin@main/assets/official-logo.png",
+      "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/jianying-edit-plugin@main/assets/official-logo.png",
       "strict": true
     },
     {
       "name": "minimax-design",
       "source": {
         "source": "github",
-        "repo": "full-aigc-plugins/partme-minimax-design",
+        "repo": "full-aigc-plugins/minimax-design-plugin",
         "ref": "main"
       },
       "description": "Generate MiniMax H3 videos with env-var auth, first/last-frame FL2VA anchoring, resumable v2 queries, 11 vendored skills, plus commands, a prompt-writer subagent, and cross-platform credential setup.",
@@ -144,14 +144,14 @@
         "hailuo",
         "video-generation"
       ],
-      "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/partme-minimax-design@main/assets/official-logo.png",
+      "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/minimax-design-plugin@main/assets/official-logo.png",
       "strict": true
     },
     {
       "name": "video-factory",
       "source": {
         "source": "github",
-        "repo": "full-aigc-plugins/partme-video-factory",
+        "repo": "full-aigc-plugins/video-factory-plugin",
         "ref": "main"
       },
       "description": "Automatic video editing, composition, synchronized review, recovery, and verified media receipts.",
@@ -162,14 +162,14 @@
         "editing",
         "receipts"
       ],
-      "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/partme-video-factory@main/assets/logo-approved.png",
+      "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/video-factory-plugin@main/assets/logo-approved.png",
       "strict": true
     },
     {
       "name": "volcengine-design",
       "source": {
         "source": "github",
-        "repo": "full-aigc-plugins/partme-volcengine-design",
+        "repo": "full-aigc-plugins/volcengine-design-plugin",
         "ref": "main"
       },
       "description": "Volcengine creation suite — Doubao ASR transcription with millisecond word timelines, TTS narration, Seedream images, Seedance video with white-model first/last-frame anchoring.",
@@ -182,7 +182,7 @@
         "tts",
         "video"
       ],
-      "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/partme-volcengine-design@main/assets/official-logo.png",
+      "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/volcengine-design-plugin@main/assets/official-logo.png",
       "strict": true
     }
   ]

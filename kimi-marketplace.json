@@ -5,62 +5,62 @@
     {
       "id": "maya-design",
       "displayName": "Autodesk Maya Design",
-      "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/partme-maya-plugin@main/assets/official-logo.png",
-      "source": "https://github.com/full-aigc-plugins/partme-maya-plugin"
+      "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/maya-design-plugin@main/assets/official-logo.png",
+      "source": "https://github.com/full-aigc-plugins/maya-design-plugin"
     },
     {
       "id": "blender-design",
       "displayName": "Blender Design",
-      "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/partme-blender-plugin@main/assets/official-logo.png",
-      "source": "https://github.com/full-aigc-plugins/partme-blender-plugin"
+      "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/blender-design-plugin@main/assets/official-logo.png",
+      "source": "https://github.com/full-aigc-plugins/blender-design-plugin"
     },
     {
       "id": "comfy-design",
       "displayName": "Comfy Design",
-      "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/partme-comfy-plugin@main/assets/official-logo.png",
-      "source": "https://github.com/full-aigc-plugins/partme-comfy-plugin"
+      "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/comfy-design-plugin@main/assets/official-logo.png",
+      "source": "https://github.com/full-aigc-plugins/comfy-design-plugin"
     },
     {
       "id": "dreamina-canvas",
       "displayName": "Dreamina Canvas",
-      "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/partme-dreamina-canvas@main/assets/official-logo.png",
-      "source": "https://github.com/full-aigc-plugins/partme-dreamina-canvas"
+      "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/dreamina-canvas-plugin@main/assets/official-logo.png",
+      "source": "https://github.com/full-aigc-plugins/dreamina-canvas-plugin"
     },
     {
       "id": "dreamina-design",
       "displayName": "Dreamina Design",
-      "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/partme-dreamina-design@main/assets/logo-approved.png",
-      "source": "https://github.com/full-aigc-plugins/partme-dreamina-design"
+      "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/dreamina-design-plugin@main/assets/logo-approved.png",
+      "source": "https://github.com/full-aigc-plugins/dreamina-design-plugin"
     },
     {
       "id": "image-factory",
       "displayName": "Image Factory",
-      "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/partme-image-factory@main/assets/logo-approved.png",
-      "source": "https://github.com/full-aigc-plugins/partme-image-factory"
+      "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/image-factory-plugin@main/assets/logo-approved.png",
+      "source": "https://github.com/full-aigc-plugins/image-factory-plugin"
     },
     {
       "id": "jianying-edit",
       "displayName": "JianYing Edit",
-      "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/partme-jianying-plugin@main/assets/official-logo.png",
-      "source": "https://github.com/full-aigc-plugins/partme-jianying-plugin"
+      "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/jianying-edit-plugin@main/assets/official-logo.png",
+      "source": "https://github.com/full-aigc-plugins/jianying-edit-plugin"
     },
     {
       "id": "minimax-design",
       "displayName": "MiniMax Design",
-      "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/partme-minimax-design@main/assets/official-logo.png",
-      "source": "https://github.com/full-aigc-plugins/partme-minimax-design"
+      "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/minimax-design-plugin@main/assets/official-logo.png",
+      "source": "https://github.com/full-aigc-plugins/minimax-design-plugin"
     },
     {
       "id": "video-factory",
       "displayName": "Video Factory",
-      "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/partme-video-factory@main/assets/logo-approved.png",
-      "source": "https://github.com/full-aigc-plugins/partme-video-factory"
+      "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/video-factory-plugin@main/assets/logo-approved.png",
+      "source": "https://github.com/full-aigc-plugins/video-factory-plugin"
     },
     {
       "id": "volcengine-design",
       "displayName": "Volcengine Design",
-      "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/partme-volcengine-design@main/assets/official-logo.png",
-      "source": "https://github.com/full-aigc-plugins/partme-volcengine-design"
+      "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/volcengine-design-plugin@main/assets/official-logo.png",
+      "source": "https://github.com/full-aigc-plugins/volcengine-design-plugin"
     }
   ]
 }

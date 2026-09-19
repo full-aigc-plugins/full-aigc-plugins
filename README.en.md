@@ -48,7 +48,7 @@ This repository is the plugin-side counterpart of [Full AIGC Skills](https://git
 ### Codex
 
 ```bash
-codex plugin marketplace add partme-ai/full-aigc-plugins
+codex plugin marketplace add full-aigc-plugins/full-aigc-plugins
 codex plugin add blender-design@full-aigc-plugins
 codex plugin add comfy-design@full-aigc-plugins
 codex plugin add dreamina-canvas@full-aigc-plugins
@@ -63,12 +63,12 @@ codex plugin add volcengine-design@full-aigc-plugins
 
 ### ZCode
 
-Open Settings → Plugins → Create → Add plugin marketplace, enter `partme-ai/full-aigc-plugins`, then install from the personal marketplace section.
+Open Settings → Plugins → Create → Add plugin marketplace, enter `full-aigc-plugins/full-aigc-plugins`, then install from the personal marketplace section.
 
 ### Kimi Code CLI
 
 ```text
-/plugins marketplace https://raw.githubusercontent.com/partme-ai/full-aigc-plugins/main/kimi-marketplace.json
+/plugins marketplace https://raw.githubusercontent.com/full-aigc-plugins/full-aigc-plugins/main/kimi-marketplace.json
 ```
 
 ---
@@ -77,18 +77,18 @@ Open Settings → Plugins → Create → Add plugin marketplace, enter `partme-a
 
 | Plugin | ID | Version | Focus | Repository |
 |--------|----|:-------:|-------|------------|
-| 🧱 **Blender Production** | `blender-design` | 0.3.2 | Controlled design, review, and export of Blender scenes (visual milestones + recovery checkpoints) | [partme-blender-plugin](https://github.com/full-aigc-plugins/partme-blender-plugin) |
-| 🎞️ **Comfy Generation** | `comfy-design` | 0.1.1 | Comfy Cloud generation workflows (image / video / audio / 3D) | [partme-comfy-plugin](https://github.com/full-aigc-plugins/partme-comfy-plugin) |
-| 🎨 **Dreamina Canvas** | `dreamina-canvas` | 0.1.3 | Build and run structured Dreamina canvases and timelines (approval-aware, recoverable) | [partme-dreamina-canvas](https://github.com/full-aigc-plugins/partme-dreamina-canvas) |
-| 🖼️ **Dreamina Design** | `dreamina-design` | 0.4.1 | Create images and videos with Dreamina | [partme-dreamina-design](https://github.com/full-aigc-plugins/partme-dreamina-design) |
-| 🏭 **Image Factory** | `image-factory` | 0.1.3 | Discover, batch-produce, and evaluate images | [partme-image-factory](https://github.com/full-aigc-plugins/partme-image-factory) |
-| ✂️ **JianYing Edit** | `jianying-edit` | 0.12.0 | pyJianYingDraft-powered native draft engine | [partme-jianying-plugin](https://github.com/full-aigc-plugins/partme-jianying-plugin) |
-| 🎬 **Maya Production** | `maya-design` | 0.1.2 | Inspect Maya scenes, create reversible Playblasts, produce verified Jimeng links | [partme-maya-plugin](https://github.com/full-aigc-plugins/partme-maya-plugin) |
-| 🎵 **MiniMax Design** | `minimax-design` | 0.4.2 | Generate H3 videos with MiniMax — white-model first/last-frame anchoring | [partme-minimax-design](https://github.com/full-aigc-plugins/partme-minimax-design) |
-| 🎥 **Video Factory** | `video-factory` | 0.1.2 | Edit, compose, review, and verify videos | [partme-video-factory](https://github.com/full-aigc-plugins/partme-video-factory) |
-| 🌋 **Volcengine Design** | `volcengine-design` | 0.1.0 | Doubao ASR/TTS plus image and video generation workflows | [partme-volcengine-design](https://github.com/full-aigc-plugins/partme-volcengine-design) |
+| 🧱 **Blender Production** | `blender-design` | 0.3.2 | Controlled design, review, and export of Blender scenes (visual milestones + recovery checkpoints) | [partme-blender-plugin](https://github.com/full-aigc-plugins/blender-design-plugin) |
+| 🎞️ **Comfy Generation** | `comfy-design` | 0.1.1 | Comfy Cloud generation workflows (image / video / audio / 3D) | [partme-comfy-plugin](https://github.com/full-aigc-plugins/comfy-design-plugin) |
+| 🎨 **Dreamina Canvas** | `dreamina-canvas` | 0.1.3 | Build and run structured Dreamina canvases and timelines (approval-aware, recoverable) | [partme-dreamina-canvas](https://github.com/full-aigc-plugins/dreamina-canvas-plugin) |
+| 🖼️ **Dreamina Design** | `dreamina-design` | 0.4.1 | Create images and videos with Dreamina | [partme-dreamina-design](https://github.com/full-aigc-plugins/dreamina-design-plugin) |
+| 🏭 **Image Factory** | `image-factory` | 0.1.3 | Discover, batch-produce, and evaluate images | [partme-image-factory](https://github.com/full-aigc-plugins/image-factory-plugin) |
+| ✂️ **JianYing Edit** | `jianying-edit` | 0.12.0 | pyJianYingDraft-powered native draft engine | [partme-jianying-plugin](https://github.com/full-aigc-plugins/jianying-edit-plugin) |
+| 🎬 **Maya Production** | `maya-design` | 0.1.2 | Inspect Maya scenes, create reversible Playblasts, produce verified Jimeng links | [partme-maya-plugin](https://github.com/full-aigc-plugins/maya-design-plugin) |
+| 🎵 **MiniMax Design** | `minimax-design` | 0.4.2 | Generate H3 videos with MiniMax — white-model first/last-frame anchoring | [partme-minimax-design](https://github.com/full-aigc-plugins/minimax-design-plugin) |
+| 🎥 **Video Factory** | `video-factory` | 0.1.2 | Edit, compose, review, and verify videos | [partme-video-factory](https://github.com/full-aigc-plugins/video-factory-plugin) |
+| 🌋 **Volcengine Design** | `volcengine-design` | 0.1.0 | Doubao ASR/TTS plus image and video generation workflows | [partme-volcengine-design](https://github.com/full-aigc-plugins/volcengine-design-plugin) |
 
-> The planning repository [`partme-cine-planning`](https://github.com/full-aigc-plugins/partme-cine-planning) (`director` / `script` / `storyboard`, specifications only) is tracked by this marketplace under the `design_baseline_not_released` status and stays out of every installable manifest until its own release boundary is complete.
+> The planning repository [`partme-cine-planning`](https://github.com/full-aigc-plugins/cine-planning) (`director` / `script` / `storyboard`, specifications only) is tracked by this marketplace under the `design_baseline_not_released` status and stays out of every installable manifest until its own release boundary is complete.
 
 ---
 
