@@ -17,7 +17,7 @@ import process from "node:process";
 import { fileURLToPath } from "node:url";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
-const workspace = path.dirname(root);
+const workspace = path.resolve(root, "..", "full-aigc-plugins-repositories");
 const dryRun = process.argv.includes("--dry-run");
 
 const catalog = JSON.parse(fs.readFileSync(path.join(root, "catalog.json"), "utf8"));

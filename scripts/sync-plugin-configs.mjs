@@ -5,7 +5,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
-const workspace = path.dirname(root);
+const workspace = path.resolve(root, "..", "full-aigc-plugins-repositories");
 const catalog = JSON.parse(fs.readFileSync(path.join(root, "catalog.json"), "utf8"));
 const format = (value) => `${JSON.stringify(value, null, 2)}\n`;
 
