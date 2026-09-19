@@ -77,7 +77,7 @@ codex plugin add volcengine-design@full-aigc-plugins
 
 | 插件 | ID | 版本 | 定位 | 仓库 |
 |------|----|:----:|------|------|
-| 🧱 **Blender 制作** | `blender-design` | 0.6.0 | Blender 场景的受控设计、审阅与导出（视觉里程碑 + 恢复检查点） | [blender-design-plugin](https://github.com/full-aigc-plugins/blender-design-plugin) |
+| 🧱 **Blender 制作** | `blender-design` | 0.7.0 | Blender 场景的受控设计、审阅与导出（视觉里程碑 + 恢复检查点） | [blender-design-plugin](https://github.com/full-aigc-plugins/blender-design-plugin) |
 | 🎞️ **Comfy 生成** | `comfy-design` | 0.1.1 | Comfy Cloud 生成工作流（图像 / 视频 / 音频 / 3D） | [comfy-design-plugin](https://github.com/full-aigc-plugins/comfy-design-plugin) |
 | 🎨 **即梦画布** | `dreamina-canvas` | 0.1.3 | 结构化 Dreamina 画布与时间线的构建和运行（带审批与恢复） | [dreamina-canvas-plugin](https://github.com/full-aigc-plugins/dreamina-canvas-plugin) |
 | 🖼️ **即梦设计** | `dreamina-design` | 0.4.1 | 即梦图像与视频创作 | [dreamina-design-plugin](https://github.com/full-aigc-plugins/dreamina-design-plugin) |
