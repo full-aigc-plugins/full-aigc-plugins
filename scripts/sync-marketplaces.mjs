@@ -3,15 +3,27 @@
 import fs from "node:fs";
 import path from "node:path";
 import process from "node:process";
+import { execFileSync } from "node:child_process";
 import { fileURLToPath } from "node:url";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const workspace = path.resolve(root, "..", "full-aigc-plugins-repositories");
 const catalog = JSON.parse(fs.readFileSync(path.join(root, "catalog.json"), "utf8"));
 const mode = process.argv.includes("--write") ? "write" : "check";
+const remoteMode = process.argv.includes("--remote");
+const remotePluginIds = new Set(
+  process.argv
+    .filter((argument) => argument.startsWith("--plugin="))
+    .map((argument) => argument.slice("--plugin=".length))
+);
+
+const releaseRef = (plugin) => `v${plugin.version}`;
 
 const rawLogo = (plugin) =>
-  `https://cdn.jsdelivr.net/gh/${plugin.repository}@main/${plugin.logo}`;
+  `https://cdn.jsdelivr.net/gh/${plugin.repository}@${releaseRef(plugin)}/${plugin.logo}`;
+
+const githubReleaseSource = (plugin) =>
+  `https://github.com/${plugin.repository}/releases/tag/${releaseRef(plugin)}`;
 
 const codex = {
   name: catalog.name,
@@ -22,7 +34,7 @@ const codex = {
     source: {
       source: "url",
       url: `https://github.com/${plugin.repository}.git`,
-      ref: "main"
+      ref: releaseRef(plugin)
     },
     policy: { installation: "AVAILABLE", authentication: "ON_USE" },
     category: plugin.category,
@@ -44,7 +56,7 @@ const zcode = {
   description: catalog.description,
   plugins: catalog.plugins.map((plugin) => ({
     name: plugin.id,
-    source: { source: "github", repo: plugin.repository, ref: "main" },
+    source: { source: "github", repo: plugin.repository, ref: releaseRef(plugin) },
     description: plugin.description,
     version: plugin.version,
     category: plugin.category,
@@ -61,7 +73,7 @@ const kimi = {
     id: plugin.id,
     displayName: plugin.displayName,
     icon: rawLogo(plugin),
-    source: `https://github.com/${plugin.repository}`
+    source: githubReleaseSource(plugin)
   }))
 };
 
@@ -73,6 +85,68 @@ const outputs = new Map([
 
 const errors = [];
 const format = (value) => `${JSON.stringify(value, null, 2)}\n`;
+
+if (remotePluginIds.size > 0) {
+  const knownPluginIds = new Set(catalog.plugins.map((plugin) => plugin.id));
+  for (const pluginId of remotePluginIds) {
+    if (!knownPluginIds.has(pluginId)) errors.push(`unknown --plugin id: ${pluginId}`);
+  }
+  for (const [file, generated] of outputs) {
+    if (!fs.existsSync(file)) {
+      errors.push(`${path.relative(root, file)} is required for filtered synchronization`);
+      continue;
+    }
+    const current = JSON.parse(fs.readFileSync(file, "utf8"));
+    const identityKey = path.basename(file) === "kimi-marketplace.json" ? "id" : "name";
+    const replacements = new Map(
+      generated.plugins
+        .filter((entry) => remotePluginIds.has(entry[identityKey]))
+        .map((entry) => [entry[identityKey], entry])
+    );
+    current.plugins = current.plugins.map((entry) =>
+      replacements.get(entry[identityKey]) ?? entry
+    );
+    outputs.set(file, current);
+  }
+}
+
+const validateRemoteRelease = (plugin) => {
+  if (!remoteMode) return;
+  if (remotePluginIds.size > 0 && !remotePluginIds.has(plugin.id)) return;
+  const ref = releaseRef(plugin);
+  const repositoryUrl = `https://github.com/${plugin.repository}.git`;
+  let output = "";
+  try {
+    output = execFileSync(
+      "git",
+      ["ls-remote", repositoryUrl, `refs/tags/${ref}`, `refs/tags/${ref}^{}`],
+      { encoding: "utf8" }
+    );
+  } catch (error) {
+    errors.push(`${plugin.id}: cannot resolve remote tag ${ref}: ${error.message}`);
+    return;
+  }
+  const lines = output.trim().split("\n").filter(Boolean);
+  const peeled = lines.find((line) => line.endsWith(`refs/tags/${ref}^{}`));
+  const direct = lines.find((line) => line.endsWith(`refs/tags/${ref}`));
+  const sha = (peeled ?? direct)?.split(/\s+/)[0];
+  if (!sha) {
+    errors.push(`${plugin.id}: missing remote tag ${ref}`);
+    return;
+  }
+  try {
+    const publishedTag = execFileSync(
+      "gh",
+      ["api", `repos/${plugin.repository}/releases/tags/${ref}`, "--jq", ".tag_name"],
+      { encoding: "utf8" }
+    ).trim();
+    if (publishedTag !== ref) {
+      errors.push(`${plugin.id}: GitHub Release tag ${publishedTag || "<missing>"} differs from ${ref}`);
+    }
+  } catch (error) {
+    errors.push(`${plugin.id}: missing published GitHub Release for ${ref}: ${error.message}`);
+  }
+};
 
 const validateSkills = (plugin, repo) => {
   const skillsRoot = path.join(repo, "skills");
@@ -146,6 +220,7 @@ for (let index = 0; index < catalog.plugins.length; index += 1) {
   const logo = path.join(repo, plugin.logo);
   if (!fs.existsSync(logo)) errors.push(`${plugin.id}: missing ${logo}`);
   validateSkills(plugin, repo);
+  validateRemoteRelease(plugin);
 
   const repositoryMarketplacePath = path.join(repo, ".agents/plugins/marketplace.json");
   if (!fs.existsSync(repositoryMarketplacePath)) {
