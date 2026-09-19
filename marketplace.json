@@ -29,7 +29,7 @@
         "ref": "main"
       },
       "description": "Design, review, and export Blender scenes through controlled operations, visual milestones, and recovery checkpoints.",
-      "version": "0.3.2",
+      "version": "0.5.0",
       "category": "Creativity",
       "tags": [
         "blender",
@@ -119,7 +119,7 @@
         "ref": "main"
       },
       "description": "Native, fully editable JianYing drafts via the vendored Apache-2.0 pyJianYingDraft engine plus the built-in Rust jycut CLI: multi-track video/text/audio, the 453-name transition catalog, keyframes, masks, styled text and SRT captions; optional fork pro-tier for native export and existing-draft editing. No account, no upload.",
-      "version": "0.12.0",
+      "version": "0.15.0",
       "category": "Creativity",
       "tags": [
         "jianying",
