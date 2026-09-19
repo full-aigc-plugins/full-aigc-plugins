@@ -77,18 +77,18 @@ Open Settings → Plugins → Create → Add plugin marketplace, enter `full-aig
 
 | Plugin | ID | Version | Focus | Repository |
 |--------|----|:-------:|-------|------------|
-| 🧱 **Blender Production** | `blender-design` | 0.3.1 | Controlled design, review, and export of Blender scenes (visual milestones + recovery checkpoints) | [partme-blender-plugin](https://github.com/partme-ai/partme-blender-plugin) |
-| 🎞️ **Comfy Generation** | `comfy-design` | 0.1.1 | Comfy Cloud generation workflows (image / video / audio / 3D) | [partme-comfy-plugin](https://github.com/partme-ai/partme-comfy-plugin) |
-| 🎨 **Dreamina Canvas** | `dreamina-canvas` | 0.1.3 | Build and run structured Dreamina canvases and timelines (approval-aware, recoverable) | [partme-dreamina-canvas](https://github.com/partme-ai/partme-dreamina-canvas) |
-| 🖼️ **Dreamina Design** | `dreamina-design` | 0.4.1 | Create images and videos with Dreamina | [partme-dreamina-design](https://github.com/partme-ai/partme-dreamina-design) |
-| 🏭 **Image Factory** | `image-factory` | 0.1.3 | Discover, batch-produce, and evaluate images | [partme-image-factory](https://github.com/partme-ai/partme-image-factory) |
-| ✂️ **JianYing Edit** | `jianying-edit` | 0.10.1 | pyJianYingDraft-powered native draft engine | [partme-jianying-plugin](https://github.com/partme-ai/partme-jianying-plugin) |
-| 🎬 **Maya Production** | `maya-design` | 0.1.2 | Inspect Maya scenes, create reversible Playblasts, produce verified Jimeng links | [partme-maya-plugin](https://github.com/partme-ai/partme-maya-plugin) |
-| 🎵 **MiniMax Design** | `minimax-design` | 0.4.2 | Generate H3 videos with MiniMax — white-model first/last-frame anchoring | [partme-minimax-design](https://github.com/partme-ai/partme-minimax-design) |
-| 🎥 **Video Factory** | `video-factory` | 0.1.2 | Edit, compose, review, and verify videos | [partme-video-factory](https://github.com/partme-ai/partme-video-factory) |
-| 🌋 **Volcengine Design** | `volcengine-design` | 0.1.0 | Doubao ASR/TTS plus image and video generation workflows | [partme-volcengine-design](https://github.com/partme-ai/partme-volcengine-design) |
+| 🧱 **Blender Production** | `blender-design` | 0.3.1 | Controlled design, review, and export of Blender scenes (visual milestones + recovery checkpoints) | [partme-blender-plugin](https://github.com/full-aigc-plugins/partme-blender-plugin) |
+| 🎞️ **Comfy Generation** | `comfy-design` | 0.1.1 | Comfy Cloud generation workflows (image / video / audio / 3D) | [partme-comfy-plugin](https://github.com/full-aigc-plugins/partme-comfy-plugin) |
+| 🎨 **Dreamina Canvas** | `dreamina-canvas` | 0.1.3 | Build and run structured Dreamina canvases and timelines (approval-aware, recoverable) | [partme-dreamina-canvas](https://github.com/full-aigc-plugins/partme-dreamina-canvas) |
+| 🖼️ **Dreamina Design** | `dreamina-design` | 0.4.1 | Create images and videos with Dreamina | [partme-dreamina-design](https://github.com/full-aigc-plugins/partme-dreamina-design) |
+| 🏭 **Image Factory** | `image-factory` | 0.1.3 | Discover, batch-produce, and evaluate images | [partme-image-factory](https://github.com/full-aigc-plugins/partme-image-factory) |
+| ✂️ **JianYing Edit** | `jianying-edit` | 0.11.0 | pyJianYingDraft-powered native draft engine | [partme-jianying-plugin](https://github.com/full-aigc-plugins/partme-jianying-plugin) |
+| 🎬 **Maya Production** | `maya-design` | 0.1.2 | Inspect Maya scenes, create reversible Playblasts, produce verified Jimeng links | [partme-maya-plugin](https://github.com/full-aigc-plugins/partme-maya-plugin) |
+| 🎵 **MiniMax Design** | `minimax-design` | 0.4.2 | Generate H3 videos with MiniMax — white-model first/last-frame anchoring | [partme-minimax-design](https://github.com/full-aigc-plugins/partme-minimax-design) |
+| 🎥 **Video Factory** | `video-factory` | 0.1.2 | Edit, compose, review, and verify videos | [partme-video-factory](https://github.com/full-aigc-plugins/partme-video-factory) |
+| 🌋 **Volcengine Design** | `volcengine-design` | 0.1.0 | Doubao ASR/TTS plus image and video generation workflows | [partme-volcengine-design](https://github.com/full-aigc-plugins/partme-volcengine-design) |
 
-> The planning repository [`partme-cine-planning`](https://github.com/partme-ai/partme-cine-planning) (`director` / `script` / `storyboard`, specifications only) is tracked by this marketplace under the `design_baseline_not_released` status and stays out of every installable manifest until its own release boundary is complete.
+> The planning repository [`partme-cine-planning`](https://github.com/full-aigc-plugins/partme-cine-planning) (`director` / `script` / `storyboard`, specifications only) is tracked by this marketplace under the `design_baseline_not_released` status and stays out of every installable manifest until its own release boundary is complete.
 
 ---
 

@@ -7,7 +7,7 @@
     {
       "name": "PartMe.AI Cine Planning",
       "localDirectory": "partme-cine-planning",
-      "repository": "partme-ai/partme-cine-planning",
+      "repository": "full-aigc-plugins/partme-cine-planning",
       "status": "design_baseline_not_released",
       "modules": [
         "director",
@@ -20,7 +20,7 @@
     {
       "id": "maya-design",
       "displayName": "Autodesk Maya Design",
-      "repository": "partme-ai/partme-maya-plugin",
+      "repository": "full-aigc-plugins/partme-maya-plugin",
       "localDirectory": "partme-maya-plugin",
       "version": "0.1.2",
       "description": "Inspect Autodesk Maya scenes, create reversible Playblasts, and produce verified Jimeng links.",
@@ -36,7 +36,7 @@
     {
       "id": "blender-design",
       "displayName": "Blender Design",
-      "repository": "partme-ai/partme-blender-plugin",
+      "repository": "full-aigc-plugins/partme-blender-plugin",
       "localDirectory": "partme-blender-plugin",
       "version": "0.3.1",
       "description": "Design, review, and export Blender scenes through controlled operations, visual milestones, and recovery checkpoints.",
@@ -52,7 +52,7 @@
     {
       "id": "comfy-design",
       "displayName": "Comfy Design",
-      "repository": "partme-ai/partme-comfy-plugin",
+      "repository": "full-aigc-plugins/partme-comfy-plugin",
       "localDirectory": "partme-comfy-plugin",
       "version": "0.1.1",
       "description": "Generate images, video, audio, and 3D, search models and nodes, and run Comfy Cloud workflows through MCP.",
@@ -68,7 +68,7 @@
     {
       "id": "dreamina-canvas",
       "displayName": "Dreamina Canvas",
-      "repository": "partme-ai/partme-dreamina-canvas",
+      "repository": "full-aigc-plugins/partme-dreamina-canvas",
       "localDirectory": "partme-dreamina-canvas",
       "version": "0.1.3",
       "description": "Build and run Dreamina Canvas node graphs and timelines with approval-aware execution, recovery, and verified assets.",
@@ -84,7 +84,7 @@
     {
       "id": "dreamina-design",
       "displayName": "Dreamina Design",
-      "repository": "partme-ai/partme-dreamina-design",
+      "repository": "full-aigc-plugins/partme-dreamina-design",
       "localDirectory": "partme-dreamina-design",
       "version": "0.4.1",
       "description": "Create and edit Dreamina images and videos with approval-aware, resumable operations and verified downloads.",
@@ -100,7 +100,7 @@
     {
       "id": "image-factory",
       "displayName": "Image Factory",
-      "repository": "partme-ai/partme-image-factory",
+      "repository": "full-aigc-plugins/partme-image-factory",
       "localDirectory": "partme-image-factory",
       "version": "0.1.3",
       "description": "Discover prompts, batch-produce and evaluate images, and record verified artifact receipts.",
@@ -116,9 +116,9 @@
     {
       "id": "jianying-edit",
       "displayName": "JianYing Edit",
-      "repository": "partme-ai/partme-jianying-plugin",
+      "repository": "full-aigc-plugins/partme-jianying-plugin",
       "localDirectory": "partme-jianying-plugin",
-      "version": "0.10.1",
+      "version": "0.11.0",
       "description": "Native, fully editable JianYing drafts via the vendored Apache-2.0 pyJianYingDraft engine plus the built-in Rust jycut CLI: multi-track video/text/audio, the 453-name transition catalog, keyframes, masks, styled text and SRT captions; optional fork pro-tier for native export and existing-draft editing. No account, no upload.",
       "shortDescription": "pyJianYingDraft-powered native draft engine",
       "category": "Creativity",
@@ -132,7 +132,7 @@
     {
       "id": "minimax-design",
       "displayName": "MiniMax Design",
-      "repository": "partme-ai/partme-minimax-design",
+      "repository": "full-aigc-plugins/partme-minimax-design",
       "localDirectory": "partme-minimax-design",
       "version": "0.4.2",
       "description": "Generate MiniMax H3 videos with env-var auth, first/last-frame FL2VA anchoring, resumable v2 queries, 11 vendored skills, plus commands, a prompt-writer subagent, and cross-platform credential setup.",
@@ -148,7 +148,7 @@
     {
       "id": "video-factory",
       "displayName": "Video Factory",
-      "repository": "partme-ai/partme-video-factory",
+      "repository": "full-aigc-plugins/partme-video-factory",
       "localDirectory": "partme-video-factory",
       "version": "0.1.2",
       "description": "Automatic video editing, composition, synchronized review, recovery, and verified media receipts.",
@@ -164,7 +164,7 @@
     {
       "id": "volcengine-design",
       "displayName": "Volcengine Design",
-      "repository": "partme-ai/partme-volcengine-design",
+      "repository": "full-aigc-plugins/partme-volcengine-design",
       "localDirectory": "partme-volcengine-design",
       "version": "0.1.0",
       "description": "Volcengine creation suite — Doubao ASR transcription with millisecond word timelines, TTS narration, Seedream images, Seedance video with white-model first/last-frame anchoring.",
