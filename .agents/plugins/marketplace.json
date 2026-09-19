@@ -60,7 +60,7 @@
         "authentication": "ON_USE"
       },
       "category": "Creativity",
-      "version": "0.1.1",
+      "version": "0.1.2",
       "description": "Generate images, video, audio, and 3D, search models and nodes, and run Comfy Cloud workflows through MCP.",
       "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/comfy-design-plugin@main/assets/official-logo.png",
       "interface": {
@@ -207,7 +207,7 @@
         "authentication": "ON_USE"
       },
       "category": "Creativity",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "description": "Volcengine creation suite — Doubao ASR transcription with millisecond word timelines, TTS narration, Seedream images, Seedance video with white-model first/last-frame anchoring.",
       "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/volcengine-design-plugin@main/assets/official-logo.png",
       "interface": {
