@@ -12,6 +12,6 @@
 
 ## 3. Publication
 
-- [ ] 3.1 Validate and archive the OpenSpec change
-- [ ] 3.2 Commit and push the market repository
-- [ ] 3.3 Confirm remote checks and immutable install targets
+- [x] 3.1 Validate and archive the OpenSpec change
+- [x] 3.2 Commit and push the market repository
+- [x] 3.3 Confirm remote checks and immutable install targets
