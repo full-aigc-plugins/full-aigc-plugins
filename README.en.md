@@ -48,7 +48,7 @@ This repository is the plugin-side counterpart of [Full AIGC Skills](https://git
 ### Codex
 
 ```bash
-codex plugin marketplace add full-aigc-plugins/full-aigc-plugins
+codex plugin marketplace add partme-ai/full-aigc-plugins
 codex plugin add blender-design@full-aigc-plugins
 codex plugin add comfy-design@full-aigc-plugins
 codex plugin add dreamina-canvas@full-aigc-plugins
@@ -63,12 +63,12 @@ codex plugin add volcengine-design@full-aigc-plugins
 
 ### ZCode
 
-Open Settings → Plugins → Create → Add plugin marketplace, enter `full-aigc-plugins/full-aigc-plugins`, then install from the personal marketplace section.
+Open Settings → Plugins → Create → Add plugin marketplace, enter `partme-ai/full-aigc-plugins`, then install from the personal marketplace section.
 
 ### Kimi Code CLI
 
 ```text
-/plugins marketplace https://raw.githubusercontent.com/full-aigc-plugins/full-aigc-plugins/main/kimi-marketplace.json
+/plugins marketplace https://raw.githubusercontent.com/partme-ai/full-aigc-plugins/main/kimi-marketplace.json
 ```
 
 ---
