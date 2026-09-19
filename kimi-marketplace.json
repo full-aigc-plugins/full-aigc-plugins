@@ -5,8 +5,8 @@
     {
       "id": "maya-design",
       "displayName": "Autodesk Maya Design",
-      "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/maya-design-plugin@v0.1.4/assets/official-logo.png",
-      "source": "https://github.com/full-aigc-plugins/maya-design-plugin/releases/tag/v0.1.4"
+      "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/maya-design-plugin@v0.1.5/assets/official-logo.png",
+      "source": "https://github.com/full-aigc-plugins/maya-design-plugin/releases/tag/v0.1.5"
     },
     {
       "id": "blender-design",
@@ -23,26 +23,26 @@
     {
       "id": "dreamina-canvas",
       "displayName": "Dreamina Canvas",
-      "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/dreamina-canvas-plugin@v0.1.5/assets/official-logo.png",
-      "source": "https://github.com/full-aigc-plugins/dreamina-canvas-plugin/releases/tag/v0.1.5"
+      "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/dreamina-canvas-plugin@v0.1.6/assets/official-logo.png",
+      "source": "https://github.com/full-aigc-plugins/dreamina-canvas-plugin/releases/tag/v0.1.6"
     },
     {
       "id": "dreamina-design",
       "displayName": "Dreamina Design",
-      "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/dreamina-design-plugin@v0.4.3/assets/logo-approved.png",
-      "source": "https://github.com/full-aigc-plugins/dreamina-design-plugin/releases/tag/v0.4.3"
+      "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/dreamina-design-plugin@v0.4.4/assets/logo-approved.png",
+      "source": "https://github.com/full-aigc-plugins/dreamina-design-plugin/releases/tag/v0.4.4"
     },
     {
       "id": "image-factory",
       "displayName": "Image Factory",
-      "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/image-factory-plugin@v0.1.5/assets/logo-approved.png",
-      "source": "https://github.com/full-aigc-plugins/image-factory-plugin/releases/tag/v0.1.5"
+      "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/image-factory-plugin@v0.1.6/assets/logo-approved.png",
+      "source": "https://github.com/full-aigc-plugins/image-factory-plugin/releases/tag/v0.1.6"
     },
     {
       "id": "jianying-edit",
       "displayName": "JianYing Edit",
-      "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/jianying-edit-plugin@main/assets/official-logo.png",
-      "source": "https://github.com/full-aigc-plugins/jianying-edit-plugin"
+      "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/jianying-edit-plugin@v0.15.0/assets/official-logo.png",
+      "source": "https://github.com/full-aigc-plugins/jianying-edit-plugin/releases/tag/v0.15.0"
     },
     {
       "id": "minimax-design",
@@ -53,8 +53,8 @@
     {
       "id": "video-factory",
       "displayName": "Video Factory",
-      "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/video-factory-plugin@v0.1.4/assets/logo-approved.png",
-      "source": "https://github.com/full-aigc-plugins/video-factory-plugin/releases/tag/v0.1.4"
+      "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/video-factory-plugin@v0.1.5/assets/logo-approved.png",
+      "source": "https://github.com/full-aigc-plugins/video-factory-plugin/releases/tag/v0.1.5"
     },
     {
       "id": "volcengine-design",

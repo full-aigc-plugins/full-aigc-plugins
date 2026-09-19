@@ -8,17 +8,17 @@
       "source": {
         "source": "github",
         "repo": "full-aigc-plugins/maya-design-plugin",
-        "ref": "v0.1.4"
+        "ref": "v0.1.5"
       },
       "description": "Inspect Autodesk Maya scenes, create reversible Playblasts, and produce verified Jimeng links.",
-      "version": "0.1.4",
+      "version": "0.1.5",
       "category": "Creativity",
       "tags": [
         "maya",
         "3d",
         "playblast"
       ],
-      "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/maya-design-plugin@v0.1.4/assets/official-logo.png",
+      "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/maya-design-plugin@v0.1.5/assets/official-logo.png",
       "strict": true
     },
     {
@@ -62,17 +62,17 @@
       "source": {
         "source": "github",
         "repo": "full-aigc-plugins/dreamina-canvas-plugin",
-        "ref": "v0.1.5"
+        "ref": "v0.1.6"
       },
       "description": "Build and run Dreamina Canvas node graphs and timelines with approval-aware execution, recovery, and verified assets.",
-      "version": "0.1.5",
+      "version": "0.1.6",
       "category": "Creativity",
       "tags": [
         "dreamina",
         "canvas",
         "timeline"
       ],
-      "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/dreamina-canvas-plugin@v0.1.5/assets/official-logo.png",
+      "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/dreamina-canvas-plugin@v0.1.6/assets/official-logo.png",
       "strict": true
     },
     {
@@ -80,17 +80,17 @@
       "source": {
         "source": "github",
         "repo": "full-aigc-plugins/dreamina-design-plugin",
-        "ref": "v0.4.3"
+        "ref": "v0.4.4"
       },
       "description": "Create and edit Dreamina images and videos with approval-aware, resumable operations and verified downloads.",
-      "version": "0.4.3",
+      "version": "0.4.4",
       "category": "Creativity",
       "tags": [
         "dreamina",
         "seedance",
         "text2video"
       ],
-      "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/dreamina-design-plugin@v0.4.3/assets/logo-approved.png",
+      "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/dreamina-design-plugin@v0.4.4/assets/logo-approved.png",
       "strict": true
     },
     {
@@ -98,17 +98,17 @@
       "source": {
         "source": "github",
         "repo": "full-aigc-plugins/image-factory-plugin",
-        "ref": "v0.1.5"
+        "ref": "v0.1.6"
       },
       "description": "Discover prompts, batch-produce and evaluate images, and record verified artifact receipts.",
-      "version": "0.1.5",
+      "version": "0.1.6",
       "category": "Creativity",
       "tags": [
         "image",
         "batch",
         "receipts"
       ],
-      "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/image-factory-plugin@v0.1.5/assets/logo-approved.png",
+      "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/image-factory-plugin@v0.1.6/assets/logo-approved.png",
       "strict": true
     },
     {
@@ -116,7 +116,7 @@
       "source": {
         "source": "github",
         "repo": "full-aigc-plugins/jianying-edit-plugin",
-        "ref": "main"
+        "ref": "v0.15.0"
       },
       "description": "Native, fully editable JianYing drafts via the vendored Apache-2.0 pyJianYingDraft engine plus the built-in Rust jycut CLI: multi-track video/text/audio, the 453-name transition catalog, keyframes, masks, styled text and SRT captions; optional fork pro-tier for native export and existing-draft editing. No account, no upload.",
       "version": "0.15.0",
@@ -126,7 +126,7 @@
         "capcut",
         "video-editing"
       ],
-      "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/jianying-edit-plugin@main/assets/official-logo.png",
+      "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/jianying-edit-plugin@v0.15.0/assets/official-logo.png",
       "strict": true
     },
     {
@@ -152,17 +152,17 @@
       "source": {
         "source": "github",
         "repo": "full-aigc-plugins/video-factory-plugin",
-        "ref": "v0.1.4"
+        "ref": "v0.1.5"
       },
       "description": "Automatic video editing, composition, synchronized review, recovery, and verified media receipts.",
-      "version": "0.1.4",
+      "version": "0.1.5",
       "category": "Creativity",
       "tags": [
         "video",
         "editing",
         "receipts"
       ],
-      "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/video-factory-plugin@v0.1.4/assets/logo-approved.png",
+      "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/video-factory-plugin@v0.1.5/assets/logo-approved.png",
       "strict": true
     },
     {
