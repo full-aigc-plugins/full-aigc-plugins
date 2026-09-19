@@ -29,7 +29,7 @@
         "ref": "main"
       },
       "description": "Design, review, and export Blender scenes through controlled operations, visual milestones, and recovery checkpoints.",
-      "version": "0.7.1",
+      "version": "0.8.0",
       "category": "Creativity",
       "tags": [
         "blender",
