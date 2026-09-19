@@ -78,15 +78,15 @@ Open Settings → Plugins → Create → Add plugin marketplace, enter `partme-a
 | Plugin | ID | Version | Focus | Repository |
 |--------|----|:-------:|-------|------------|
 | 🧱 **Blender Production** | `blender-design` | 0.11.0 | Controlled Blender production with a four-tab workbench, provider capabilities, visual milestones, and recovery checkpoints | [blender-design-plugin](https://github.com/full-aigc-plugins/blender-design-plugin) |
-| 🎞️ **Comfy Generation** | `comfy-design` | 0.1.1 | Comfy Cloud generation workflows (image / video / audio / 3D) | [comfy-design-plugin](https://github.com/full-aigc-plugins/comfy-design-plugin) |
-| 🎨 **Dreamina Canvas** | `dreamina-canvas` | 0.1.3 | Build and run structured Dreamina canvases and timelines (approval-aware, recoverable) | [dreamina-canvas-plugin](https://github.com/full-aigc-plugins/dreamina-canvas-plugin) |
-| 🖼️ **Dreamina Design** | `dreamina-design` | 0.4.1 | Create images and videos with Dreamina | [dreamina-design-plugin](https://github.com/full-aigc-plugins/dreamina-design-plugin) |
-| 🏭 **Image Factory** | `image-factory` | 0.1.3 | Discover, batch-produce, and evaluate images | [image-factory-plugin](https://github.com/full-aigc-plugins/image-factory-plugin) |
+| 🎞️ **Comfy Generation** | `comfy-design` | 0.1.3 | Comfy Cloud generation workflows (image / video / audio / 3D) | [comfy-design-plugin](https://github.com/full-aigc-plugins/comfy-design-plugin) |
+| 🎨 **Dreamina Canvas** | `dreamina-canvas` | 0.1.5 | Build and run structured Dreamina canvases and timelines (approval-aware, recoverable) | [dreamina-canvas-plugin](https://github.com/full-aigc-plugins/dreamina-canvas-plugin) |
+| 🖼️ **Dreamina Design** | `dreamina-design` | 0.4.3 | Create images and videos with Dreamina | [dreamina-design-plugin](https://github.com/full-aigc-plugins/dreamina-design-plugin) |
+| 🏭 **Image Factory** | `image-factory` | 0.1.5 | Discover, batch-produce, and evaluate images | [image-factory-plugin](https://github.com/full-aigc-plugins/image-factory-plugin) |
 | ✂️ **JianYing Edit** | `jianying-edit` | 0.15.0 | pyJianYingDraft-powered native draft engine | [jianying-edit-plugin](https://github.com/full-aigc-plugins/jianying-edit-plugin) |
-| 🎬 **Maya Production** | `maya-design` | 0.1.2 | Inspect Maya scenes, create reversible Playblasts, produce verified Jimeng links | [maya-design-plugin](https://github.com/full-aigc-plugins/maya-design-plugin) |
-| 🎵 **MiniMax Design** | `minimax-design` | 0.4.2 | Generate H3 videos with MiniMax — white-model first/last-frame anchoring | [minimax-design-plugin](https://github.com/full-aigc-plugins/minimax-design-plugin) |
-| 🎥 **Video Factory** | `video-factory` | 0.1.2 | Edit, compose, review, and verify videos | [video-factory-plugin](https://github.com/full-aigc-plugins/video-factory-plugin) |
-| 🌋 **Volcengine Design** | `volcengine-design` | 0.1.0 | Doubao ASR/TTS plus image and video generation workflows | [volcengine-design-plugin](https://github.com/full-aigc-plugins/volcengine-design-plugin) |
+| 🎬 **Maya Production** | `maya-design` | 0.1.4 | Inspect Maya scenes, create reversible Playblasts, produce verified Jimeng links | [maya-design-plugin](https://github.com/full-aigc-plugins/maya-design-plugin) |
+| 🎵 **MiniMax Design** | `minimax-design` | 0.4.3 | Generate H3 videos with MiniMax — white-model first/last-frame anchoring | [minimax-design-plugin](https://github.com/full-aigc-plugins/minimax-design-plugin) |
+| 🎥 **Video Factory** | `video-factory` | 0.1.4 | Edit, compose, review, and verify videos | [video-factory-plugin](https://github.com/full-aigc-plugins/video-factory-plugin) |
+| 🌋 **Volcengine Design** | `volcengine-design` | 0.1.2 | Doubao ASR/TTS plus image and video generation workflows | [volcengine-design-plugin](https://github.com/full-aigc-plugins/volcengine-design-plugin) |
 
 > The planning repository [`cine-planning`](https://github.com/full-aigc-plugins/cine-planning) (`director` / `script` / `storyboard`, specifications only) is tracked by this marketplace under the `design_baseline_not_released` status and stays out of every installable manifest until its own release boundary is complete.
 
