@@ -26,17 +26,17 @@
       "source": {
         "source": "github",
         "repo": "full-aigc-plugins/blender-design-plugin",
-        "ref": "v0.11.2"
+        "ref": "v0.11.3"
       },
       "description": "Design, review, and export Blender scenes through controlled operations, visual milestones, and recovery checkpoints.",
-      "version": "0.11.2",
+      "version": "0.11.3",
       "category": "Creativity",
       "tags": [
         "blender",
         "3d",
         "previs"
       ],
-      "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/blender-design-plugin@v0.11.2/assets/official-logo.png",
+      "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/blender-design-plugin@v0.11.3/assets/official-logo.png",
       "strict": true
     },
     {
