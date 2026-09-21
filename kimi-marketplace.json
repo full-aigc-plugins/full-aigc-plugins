@@ -61,6 +61,12 @@
       "displayName": "Volcengine Design",
       "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/volcengine-design-plugin@v0.1.2/assets/official-logo.png",
       "source": "https://github.com/full-aigc-plugins/volcengine-design-plugin/releases/tag/v0.1.2"
+    },
+    {
+      "id": "xuanji",
+      "displayName": "Xuanji · Cyber Divination",
+      "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/xuanji-plugin@v0.1.0/assets/logo.png",
+      "source": "https://github.com/full-aigc-plugins/xuanji-plugin/releases/tag/v0.1.0"
     }
   ]
 }
