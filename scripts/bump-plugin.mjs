@@ -93,7 +93,13 @@ const today = new Intl.DateTimeFormat("en-CA", {
   month: "2-digit",
   day: "2-digit",
 }).format(new Date()).replaceAll("-", "");
-const repoDir = path.join(workspace, plugin.localDirectory);
+const directRepoDir = path.join(workspace, plugin.localDirectory);
+const repositoriesRepoDir = path.join(workspace, `${path.basename(root)}-repositories`, plugin.localDirectory);
+const repoDir = [directRepoDir, repositoriesRepoDir]
+  .find((candidate) => fs.existsSync(path.join(candidate, ".codex-plugin", "plugin.json")));
+if (!repoDir) {
+  throw new Error(`找不到插件仓: ${plugin.localDirectory}（已检查 ${directRepoDir} 与 ${repositoriesRepoDir}）`);
+}
 const codexManifestPath = path.join(repoDir, ".codex-plugin/plugin.json");
 const oldCodexVersion = JSON.parse(fs.readFileSync(codexManifestPath, "utf8")).version;
 const newCodexVersion = `${newVersion}+codex.${today}`;
