@@ -41,8 +41,8 @@
     {
       "id": "jianying-edit",
       "displayName": "JianYing Edit",
-      "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/jianying-edit-plugin@v0.21.1/assets/official-logo.png",
-      "source": "https://github.com/full-aigc-plugins/jianying-edit-plugin/releases/tag/v0.21.1"
+      "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/jianying-edit-plugin@v0.22.0/assets/official-logo.png",
+      "source": "https://github.com/full-aigc-plugins/jianying-edit-plugin/releases/tag/v0.22.0"
     },
     {
       "id": "minimax-design",
