@@ -79,13 +79,13 @@ codex plugin add volcengine-design@full-aigc-plugins
 |------|----|:----:|------|------|
 | 🧱 **Blender 制作** | `blender-design` | 0.12.0 | Blender 场景的受控设计、审阅与导出（四 Tab 工作台、供应商能力、视觉里程碑与恢复检查点） | [blender-design-plugin](https://github.com/full-aigc-plugins/blender-design-plugin) |
 | 🎞️ **Comfy 生成** | `comfy-design` | 0.1.3 | Comfy Cloud 生成工作流（图像 / 视频 / 音频 / 3D） | [comfy-design-plugin](https://github.com/full-aigc-plugins/comfy-design-plugin) |
-| 🎨 **即梦画布** | `dreamina-canvas` | 0.1.5 | 结构化 Dreamina 画布与时间线的构建和运行（带审批与恢复） | [dreamina-canvas-plugin](https://github.com/full-aigc-plugins/dreamina-canvas-plugin) |
-| 🖼️ **即梦设计** | `dreamina-design` | 0.4.3 | 即梦图像与视频创作 | [dreamina-design-plugin](https://github.com/full-aigc-plugins/dreamina-design-plugin) |
-| 🏭 **图片工厂** | `image-factory` | 0.1.5 | 图像的发现、批量生产与评估闭环 | [image-factory-plugin](https://github.com/full-aigc-plugins/image-factory-plugin) |
-| ✂️ **剪映剪辑** | `jianying-edit` | 0.15.0 | pyJianYingDraft 驱动的剪映草稿原生引擎 | [jianying-edit-plugin](https://github.com/full-aigc-plugins/jianying-edit-plugin) |
-| 🎬 **Maya 制作** | `maya-design` | 0.1.4 | Maya 场景检查与可逆 Playblast，产出经核验的即梦链接 | [maya-design-plugin](https://github.com/full-aigc-plugins/maya-design-plugin) |
+| 🎨 **即梦画布** | `dreamina-canvas` | 0.1.7 | 结构化 Dreamina 画布与时间线的构建和运行（带审批与恢复） | [dreamina-canvas-plugin](https://github.com/full-aigc-plugins/dreamina-canvas-plugin) |
+| 🖼️ **即梦设计** | `dreamina-design` | 0.5.0 | 即梦图像与视频创作 | [dreamina-design-plugin](https://github.com/full-aigc-plugins/dreamina-design-plugin) |
+| 🏭 **图片工厂** | `image-factory` | 0.1.6 | 图像的发现、批量生产与评估闭环 | [image-factory-plugin](https://github.com/full-aigc-plugins/image-factory-plugin) |
+| ✂️ **剪映剪辑** | `jianying-edit` | 0.19.0 | Rust-only 剪映工作流编排与可编辑草稿 | [jianying-edit-plugin](https://github.com/full-aigc-plugins/jianying-edit-plugin) |
+| 🎬 **Maya 制作** | `maya-design` | 0.1.5 | Maya 场景检查与可逆 Playblast，产出经核验的即梦链接 | [maya-design-plugin](https://github.com/full-aigc-plugins/maya-design-plugin) |
 | 🎵 **MiniMax 设计** | `minimax-design` | 0.4.3 | MiniMax H3 视频生成（白模首尾帧锚定） | [minimax-design-plugin](https://github.com/full-aigc-plugins/minimax-design-plugin) |
-| 🎥 **视频工厂** | `video-factory` | 0.1.4 | 视频的剪辑、合成、审校与校验 | [video-factory-plugin](https://github.com/full-aigc-plugins/video-factory-plugin) |
+| 🎥 **视频工厂** | `video-factory` | 0.1.5 | 视频的剪辑、合成、审校与校验 | [video-factory-plugin](https://github.com/full-aigc-plugins/video-factory-plugin) |
 | 🌋 **火山引擎设计** | `volcengine-design` | 0.1.2 | 豆包 ASR/TTS 与图像、视频生成工作流 | [volcengine-design-plugin](https://github.com/full-aigc-plugins/volcengine-design-plugin) |
 
 > 规划仓 [`cine-planning`](https://github.com/full-aigc-plugins/cine-planning)（`director` / `script` / `storyboard` 纯规格）按 `design_baseline_not_released` 状态跟随本市场管理，在自身发布边界完成前不进入任何可安装清单。
@@ -108,6 +108,9 @@ full-aigc-plugins/
 ```
 
 每个独立插件仓负责自己的运行时适配：`.codex-plugin/plugin.json`、`.zcode-plugin/plugin.json` 与 `kimi.plugin.json`。
+
+`scripts/sync-release-tooling.mjs` 默认只补齐缺失的 `AGENTS.md`，不会覆盖仓库已有的项目级指令。
+只有维护者明确传入 `--refresh-agents` 时才更新既有模板；`--dry-run` 可先查看影响范围。
 
 ### 渐进式披露
 

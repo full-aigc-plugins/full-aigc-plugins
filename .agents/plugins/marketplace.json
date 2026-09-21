@@ -74,20 +74,20 @@
       "source": {
         "source": "url",
         "url": "https://github.com/full-aigc-plugins/dreamina-canvas-plugin.git",
-        "ref": "v0.1.6"
+        "ref": "v0.1.7"
       },
       "policy": {
         "installation": "AVAILABLE",
         "authentication": "ON_USE"
       },
       "category": "Creativity",
-      "version": "0.1.6",
+      "version": "0.1.7",
       "description": "Build and run Dreamina Canvas node graphs and timelines with approval-aware execution, recovery, and verified assets.",
-      "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/dreamina-canvas-plugin@v0.1.6/assets/official-logo.png",
+      "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/dreamina-canvas-plugin@v0.1.7/assets/official-logo.png",
       "interface": {
         "displayName": "Dreamina Canvas",
         "shortDescription": "Build and run structured Dreamina canvases",
-        "logo": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/dreamina-canvas-plugin@v0.1.6/assets/official-logo.png"
+        "logo": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/dreamina-canvas-plugin@v0.1.7/assets/official-logo.png"
       }
     },
     {
@@ -95,20 +95,20 @@
       "source": {
         "source": "url",
         "url": "https://github.com/full-aigc-plugins/dreamina-design-plugin.git",
-        "ref": "v0.4.4"
+        "ref": "v0.5.0"
       },
       "policy": {
         "installation": "AVAILABLE",
         "authentication": "ON_USE"
       },
       "category": "Creativity",
-      "version": "0.4.4",
+      "version": "0.5.0",
       "description": "Create and edit Dreamina images and videos with approval-aware, resumable operations and verified downloads.",
-      "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/dreamina-design-plugin@v0.4.4/assets/logo-approved.png",
+      "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/dreamina-design-plugin@v0.5.0/assets/logo-approved.png",
       "interface": {
         "displayName": "Dreamina Design",
         "shortDescription": "Create images and videos with Dreamina",
-        "logo": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/dreamina-design-plugin@v0.4.4/assets/logo-approved.png"
+        "logo": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/dreamina-design-plugin@v0.5.0/assets/logo-approved.png"
       }
     },
     {
@@ -137,20 +137,20 @@
       "source": {
         "source": "url",
         "url": "https://github.com/full-aigc-plugins/jianying-edit-plugin.git",
-        "ref": "v0.15.0"
+        "ref": "v0.19.0"
       },
       "policy": {
         "installation": "AVAILABLE",
         "authentication": "ON_USE"
       },
       "category": "Creativity",
-      "version": "0.15.0",
-      "description": "Native, fully editable JianYing drafts via the vendored Apache-2.0 pyJianYingDraft engine plus the built-in Rust jycut CLI: multi-track video/text/audio, the 453-name transition catalog, keyframes, masks, styled text and SRT captions; optional fork pro-tier for native export and existing-draft editing. No account, no upload.",
-      "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/jianying-edit-plugin@v0.15.0/assets/official-logo.png",
+      "version": "0.19.0",
+      "description": "Cross-host JianYing/CapCut workflow orchestration through the checksum-verified Rust jianying-cli Runtime Adapter: jianying-job/v2, editable drafts, captions, audio/TTS/ASR, batch recovery, approvals, and MCP stdio/HTTP/SSE. No Python engine or external fork runtime.",
+      "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/jianying-edit-plugin@v0.19.0/assets/official-logo.png",
       "interface": {
         "displayName": "JianYing Edit",
-        "shortDescription": "pyJianYingDraft-powered native draft engine",
-        "logo": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/jianying-edit-plugin@v0.15.0/assets/official-logo.png"
+        "shortDescription": "Rust-only JianYing workflow orchestration",
+        "logo": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/jianying-edit-plugin@v0.19.0/assets/official-logo.png"
       }
     },
     {
