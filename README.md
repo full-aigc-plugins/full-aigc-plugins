@@ -78,7 +78,7 @@ codex plugin add volcengine-design@full-aigc-plugins
 | 插件 | ID | 版本 | 定位 | 仓库 |
 |------|----|:----:|------|------|
 | 🧱 **Blender 制作** | `blender-design` | 0.13.2 | Blender 场景的受控设计、审阅与导出（四 Tab 工作台、供应商能力、视觉里程碑与恢复检查点） | [blender-design-plugin](https://github.com/full-aigc-plugins/blender-design-plugin) |
-| 🎞️ **Comfy 生成** | `comfy-design` | 0.1.3 | Comfy Cloud 生成工作流（图像 / 视频 / 音频 / 3D） | [comfy-design-plugin](https://github.com/full-aigc-plugins/comfy-design-plugin) |
+| 🎞️ **Comfy 生成** | `comfy-design` | 0.2.0 | Comfy Cloud 生成工作流（图像 / 视频 / 音频 / 3D） | [comfy-design-plugin](https://github.com/full-aigc-plugins/comfy-design-plugin) |
 | 🎨 **即梦画布** | `dreamina-canvas` | 0.2.0 | 结构化 Dreamina 画布与时间线的构建和运行（带审批与恢复） | [dreamina-canvas-plugin](https://github.com/full-aigc-plugins/dreamina-canvas-plugin) |
 | 🖼️ **即梦设计** | `dreamina-design` | 0.6.0 | 即梦图像与视频创作 | [dreamina-design-plugin](https://github.com/full-aigc-plugins/dreamina-design-plugin) |
 | 🏭 **图片工厂** | `image-factory` | 0.2.0 | 图像的发现、批量生产与评估闭环 | [image-factory-plugin](https://github.com/full-aigc-plugins/image-factory-plugin) |
@@ -87,7 +87,6 @@ codex plugin add volcengine-design@full-aigc-plugins
 | 🎵 **MiniMax 设计** | `minimax-design` | 0.4.3 | MiniMax H3 视频生成（白模首尾帧锚定） | [minimax-design-plugin](https://github.com/full-aigc-plugins/minimax-design-plugin) |
 | 🎥 **视频工厂** | `video-factory` | 0.2.0 | 视频的剪辑、合成、审校与校验 | [video-factory-plugin](https://github.com/full-aigc-plugins/video-factory-plugin) |
 | 🌋 **火山引擎设计** | `volcengine-design` | 0.1.2 | 豆包 ASR/TTS 与图像、视频生成工作流 | [volcengine-design-plugin](https://github.com/full-aigc-plugins/volcengine-design-plugin) |
-| 🔮 **玄机玄学** | `xuanji` | 0.1.0 | 娱乐向术数六科（八字/奇门/紫微/姻缘/风水/塔罗）+ AIGC 成象（观象环 ≤3 轮） | [xuanji-plugin](https://github.com/full-aigc-plugins/xuanji-plugin) |
 
 > 规划仓 [`cine-planning`](https://github.com/full-aigc-plugins/cine-planning)（`director` / `script` / `storyboard` 纯规格）按 `design_baseline_not_released` 状态跟随本市场管理，在自身发布边界完成前不进入任何可安装清单。
 
