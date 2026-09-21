@@ -80,7 +80,7 @@ codex plugin add volcengine-design@full-aigc-plugins
 | 🧱 **Blender 制作** | `blender-design` | 0.12.0 | Blender 场景的受控设计、审阅与导出（四 Tab 工作台、供应商能力、视觉里程碑与恢复检查点） | [blender-design-plugin](https://github.com/full-aigc-plugins/blender-design-plugin) |
 | 🎞️ **Comfy 生成** | `comfy-design` | 0.1.3 | Comfy Cloud 生成工作流（图像 / 视频 / 音频 / 3D） | [comfy-design-plugin](https://github.com/full-aigc-plugins/comfy-design-plugin) |
 | 🎨 **即梦画布** | `dreamina-canvas` | 0.1.7 | 结构化 Dreamina 画布与时间线的构建和运行（带审批与恢复） | [dreamina-canvas-plugin](https://github.com/full-aigc-plugins/dreamina-canvas-plugin) |
-| 🖼️ **即梦设计** | `dreamina-design` | 0.5.0 | 即梦图像与视频创作 | [dreamina-design-plugin](https://github.com/full-aigc-plugins/dreamina-design-plugin) |
+| 🖼️ **即梦设计** | `dreamina-design` | 0.6.0 | 即梦图像与视频创作 | [dreamina-design-plugin](https://github.com/full-aigc-plugins/dreamina-design-plugin) |
 | 🏭 **图片工厂** | `image-factory` | 0.1.6 | 图像的发现、批量生产与评估闭环 | [image-factory-plugin](https://github.com/full-aigc-plugins/image-factory-plugin) |
 | ✂️ **剪映剪辑** | `jianying-edit` | 0.19.0 | Rust-only 剪映工作流编排与可编辑草稿 | [jianying-edit-plugin](https://github.com/full-aigc-plugins/jianying-edit-plugin) |
 | 🎬 **Maya 制作** | `maya-design` | 0.1.5 | Maya 场景检查与可逆 Playblast，产出经核验的即梦链接 | [maya-design-plugin](https://github.com/full-aigc-plugins/maya-design-plugin) |
