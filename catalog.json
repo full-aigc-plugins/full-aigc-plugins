@@ -150,7 +150,7 @@
       "displayName": "Video Factory",
       "repository": "full-aigc-plugins/video-factory-plugin",
       "localDirectory": "video-factory-plugin",
-      "version": "0.1.5",
+      "version": "0.2.0",
       "description": "Automatic video editing, composition, synchronized review, recovery, and verified media receipts.",
       "shortDescription": "Edit, compose, review, and verify videos",
       "category": "Creativity",

@@ -152,17 +152,17 @@
       "source": {
         "source": "github",
         "repo": "full-aigc-plugins/video-factory-plugin",
-        "ref": "v0.1.5"
+        "ref": "v0.2.0"
       },
       "description": "Automatic video editing, composition, synchronized review, recovery, and verified media receipts.",
-      "version": "0.1.5",
+      "version": "0.2.0",
       "category": "Creativity",
       "tags": [
         "video",
         "editing",
         "receipts"
       ],
-      "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/video-factory-plugin@v0.1.5/assets/logo-approved.png",
+      "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/video-factory-plugin@v0.2.0/assets/logo-approved.png",
       "strict": true
     },
     {
