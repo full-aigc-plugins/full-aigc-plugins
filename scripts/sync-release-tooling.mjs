@@ -9,16 +9,20 @@
  * 范围：catalog.json 的全部 plugins[].localDirectory + planningRepositories[].localDirectory。
  * planning 仓（无可安装 manifest）的 AGENTS.md 会注明跟随宿主插件发版。
  *
- * 用法：node scripts/sync-release-tooling.mjs [--dry-run]
+ * 用法：node scripts/sync-release-tooling.mjs [--dry-run] [--refresh-agents]
+ * 默认保留仓库已有 AGENTS.md；只有缺失时创建，或显式 --refresh-agents 时更新模板。
  */
 import fs from "node:fs";
 import path from "node:path";
 import process from "node:process";
 import { fileURLToPath } from "node:url";
 
+import { shouldWriteAgents } from "./release-tooling-policy.mjs";
+
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const workspace = path.resolve(root, "..", "full-aigc-plugins-repositories");
 const dryRun = process.argv.includes("--dry-run");
+const refreshAgents = process.argv.includes("--refresh-agents");
 
 const catalog = JSON.parse(fs.readFileSync(path.join(root, "catalog.json"), "utf8"));
 
@@ -55,9 +59,12 @@ node scripts/bump-plugin.mjs ${planning ? "<宿主插件id>" : id} minor   # 新
 node scripts/bump-plugin.mjs ${planning ? "<宿主插件id>" : id} major   # 破坏性变更
 \`\`\`
 
-脚本自动完成：catalog.json 版本更新 + 全部 manifest 同步（codex 清单带
-当日 \`+codex.日期\` 后缀）+ 三平台市场清单重新生成与校验。之后按脚本
+脚本自动完成：catalog.json 版本更新 + 全部 manifest 与 README 版本同步（codex 清单带
+上海时区当日 \`+codex.日期\` 后缀）+ 真实宿主验收重置 + 三平台市场清单重新生成与校验。之后按脚本
 提示提交并 push **两个仓库**（本仓 + plugins 市场仓）。
+
+> bump 成功只表示**发版候选已生成**。提交和普通 push 之后仍需按插件仓发布门禁创建 tag、
+> 取得 Immutable Release/制品校验，并完成真实市场安装验证，才能宣称发布完成。
 
 ### 市场仓版本同步（强制，漏做用户就看不到更新）
 
@@ -100,8 +107,17 @@ for (const t of targets) {
   if (!fs.existsSync(bumpTarget) || !bumpScript.equals(fs.readFileSync(bumpTarget))) {
     plan.push(bumpTarget);
   }
-  if (!fs.existsSync(agentsTarget) || fs.readFileSync(agentsTarget, "utf8") !== agentsText) {
+  const agentsExists = fs.existsSync(agentsTarget);
+  const currentAgents = agentsExists ? fs.readFileSync(agentsTarget, "utf8") : "";
+  if (shouldWriteAgents({
+    exists: agentsExists,
+    current: currentAgents,
+    expected: agentsText,
+    refreshAgents,
+  })) {
     plan.push(agentsTarget);
+  } else if (agentsExists && currentAgents !== agentsText && !refreshAgents) {
+    console.log(`~ ${t.dir}/AGENTS.md（保留仓库自定义内容；用 --refresh-agents 显式更新）`);
   }
   if (plan.length === 0) {
     console.log(`= ${t.dir}（已同步）`);

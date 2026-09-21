@@ -211,8 +211,10 @@ for (const [file, value] of outputs) {
 
 for (let index = 0; index < catalog.plugins.length; index += 1) {
   const plugin = catalog.plugins[index];
+  if (remotePluginIds.size > 0 && !remotePluginIds.has(plugin.id)) continue;
   const previous = catalog.plugins[index - 1];
-  if (previous && previous.displayName.localeCompare(plugin.displayName, "en", { sensitivity: "base" }) > 0) {
+  if (remotePluginIds.size === 0 && previous
+      && previous.displayName.localeCompare(plugin.displayName, "en", { sensitivity: "base" }) > 0) {
     errors.push(`catalog order is not alphabetical: ${previous.displayName} before ${plugin.displayName}`);
   }
 
@@ -313,4 +315,7 @@ if (errors.length > 0) {
   process.exit(1);
 }
 
-console.log(`${mode === "write" ? "Synchronized" : "Validated"} ${catalog.plugins.length} installable plugins and ${(catalog.planningRepositories ?? []).length} planning repository for Codex, ZCode, and Kimi.`);
+const validatedPluginCount = remotePluginIds.size > 0
+  ? remotePluginIds.size
+  : catalog.plugins.length;
+console.log(`${mode === "write" ? "Synchronized" : "Validated"} ${validatedPluginCount} installable plugins and ${(catalog.planningRepositories ?? []).length} planning repository for Codex, ZCode, and Kimi.`);
