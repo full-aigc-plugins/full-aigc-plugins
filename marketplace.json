@@ -1,189 +1,220 @@
 {
   "name": "full-aigc-plugins",
-  "displayName": "Full AIGC 插件",
   "description": "Full AIGC plugin marketplace for Codex, ZCode, and Kimi Code: image, video, audio, music, 3D, and multimodal content creation.",
+  "owner": {
+    "name": "PartMe.AI",
+    "url": "https://github.com/partme-ai"
+  },
   "plugins": [
     {
       "name": "maya-design",
       "source": {
-        "source": "github",
-        "repo": "full-aigc-plugins/maya-design-plugin",
+        "source": "url",
+        "url": "https://github.com/full-aigc-plugins/maya-design-plugin.git",
         "ref": "v0.1.5"
       },
-      "description": "Inspect Autodesk Maya scenes, create reversible Playblasts, and produce verified Jimeng links.",
-      "version": "0.1.5",
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_USE"
+      },
       "category": "Creativity",
-      "tags": [
-        "maya",
-        "3d",
-        "playblast"
-      ],
+      "version": "0.1.5",
+      "description": "Inspect Autodesk Maya scenes, create reversible Playblasts, and produce verified Jimeng links.",
       "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/maya-design-plugin@v0.1.5/assets/official-logo.png",
-      "strict": true
+      "interface": {
+        "displayName": "Autodesk Maya Design",
+        "shortDescription": "Inspect scenes and create reversible Playblasts",
+        "logo": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/maya-design-plugin@v0.1.5/assets/official-logo.png"
+      }
     },
     {
       "name": "blender-design",
       "source": {
-        "source": "github",
-        "repo": "full-aigc-plugins/blender-design-plugin",
+        "source": "url",
+        "url": "https://github.com/full-aigc-plugins/blender-design-plugin.git",
         "ref": "v0.13.2"
       },
-      "description": "Design, review, and export Blender scenes through controlled operations, visual milestones, and recovery checkpoints.",
-      "version": "0.13.2",
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_USE"
+      },
       "category": "Creativity",
-      "tags": [
-        "blender",
-        "3d",
-        "previs"
-      ],
+      "version": "0.13.2",
+      "description": "Design, review, and export Blender scenes through controlled operations, visual milestones, and recovery checkpoints.",
       "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/blender-design-plugin@v0.13.2/assets/official-logo.png",
-      "strict": true
+      "interface": {
+        "displayName": "Blender Design",
+        "shortDescription": "Design, review, and export Blender projects",
+        "logo": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/blender-design-plugin@v0.13.2/assets/official-logo.png"
+      }
     },
     {
       "name": "comfy-design",
       "source": {
-        "source": "github",
-        "repo": "full-aigc-plugins/comfy-design-plugin",
+        "source": "url",
+        "url": "https://github.com/full-aigc-plugins/comfy-design-plugin.git",
         "ref": "v0.2.0"
       },
-      "description": "Generate images, video, audio, and 3D, search models and nodes, and run Comfy Cloud workflows through MCP.",
-      "version": "0.2.0",
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_USE"
+      },
       "category": "Creativity",
-      "tags": [
-        "comfy",
-        "comfyui",
-        "workflow"
-      ],
+      "version": "0.2.0",
+      "description": "Generate images, video, audio, and 3D, search models and nodes, and run Comfy Cloud workflows through MCP.",
       "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/comfy-design-plugin@v0.2.0/assets/official-logo.png",
-      "strict": true
+      "interface": {
+        "displayName": "Comfy Design",
+        "shortDescription": "Comfy Cloud generation workflows",
+        "logo": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/comfy-design-plugin@v0.2.0/assets/official-logo.png"
+      }
     },
     {
       "name": "dreamina-canvas",
       "source": {
-        "source": "github",
-        "repo": "full-aigc-plugins/dreamina-canvas-plugin",
+        "source": "url",
+        "url": "https://github.com/full-aigc-plugins/dreamina-canvas-plugin.git",
         "ref": "v0.2.0"
       },
-      "description": "Build and run Dreamina Canvas node graphs and timelines with approval-aware execution, recovery, and verified assets.",
-      "version": "0.2.0",
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_USE"
+      },
       "category": "Creativity",
-      "tags": [
-        "dreamina",
-        "canvas",
-        "timeline"
-      ],
+      "version": "0.2.0",
+      "description": "Build and run Dreamina Canvas node graphs and timelines with approval-aware execution, recovery, and verified assets.",
       "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/dreamina-canvas-plugin@v0.2.0/assets/official-logo.png",
-      "strict": true
+      "interface": {
+        "displayName": "Dreamina Canvas",
+        "shortDescription": "Build and run structured Dreamina canvases",
+        "logo": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/dreamina-canvas-plugin@v0.2.0/assets/official-logo.png"
+      }
     },
     {
       "name": "dreamina-design",
       "source": {
-        "source": "github",
-        "repo": "full-aigc-plugins/dreamina-design-plugin",
-        "ref": "v0.5.0"
+        "source": "url",
+        "url": "https://github.com/full-aigc-plugins/dreamina-design-plugin.git",
+        "ref": "v0.6.0"
       },
-      "description": "Create and edit Dreamina images and videos with approval-aware, resumable operations and verified downloads.",
-      "version": "0.5.0",
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_USE"
+      },
       "category": "Creativity",
-      "tags": [
-        "dreamina",
-        "seedance",
-        "text2video"
-      ],
-      "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/dreamina-design-plugin@v0.5.0/assets/logo-approved.png",
-      "strict": true
+      "version": "0.6.0",
+      "description": "Create and edit Dreamina images and videos with approval-aware, resumable operations and verified downloads.",
+      "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/dreamina-design-plugin@v0.6.0/assets/logo-approved.png",
+      "interface": {
+        "displayName": "Dreamina Design",
+        "shortDescription": "Create images and videos with Dreamina",
+        "logo": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/dreamina-design-plugin@v0.6.0/assets/logo-approved.png"
+      }
     },
     {
       "name": "image-factory",
       "source": {
         "source": "github",
         "repo": "full-aigc-plugins/image-factory-plugin",
-        "ref": "v0.1.6"
+        "ref": "v0.2.0"
       },
       "description": "Discover prompts, batch-produce and evaluate images, and record verified artifact receipts.",
-      "version": "0.1.6",
+      "version": "0.2.0",
       "category": "Creativity",
       "tags": [
         "image",
         "batch",
         "receipts"
       ],
-      "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/image-factory-plugin@v0.1.6/assets/logo-approved.png",
+      "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/image-factory-plugin@v0.2.0/assets/logo-approved.png",
       "strict": true
     },
     {
       "name": "jianying-edit",
       "source": {
-        "source": "github",
-        "repo": "full-aigc-plugins/jianying-edit-plugin",
+        "source": "url",
+        "url": "https://github.com/full-aigc-plugins/jianying-edit-plugin.git",
         "ref": "v0.24.0"
       },
-      "description": "Cross-host JianYing/CapCut workflow orchestration through the checksum-verified Rust jianying-cli Runtime Adapter: jianying-job/v2, editable drafts, captions, audio/TTS/ASR, batch recovery, approvals, and MCP stdio/HTTP/SSE. No Python engine or external fork runtime.",
-      "version": "0.24.0",
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_USE"
+      },
       "category": "Creativity",
-      "tags": [
-        "jianying",
-        "capcut",
-        "video-editing"
-      ],
+      "version": "0.24.0",
+      "description": "Cross-host JianYing/CapCut workflow orchestration through the checksum-verified Rust jianying-cli Runtime Adapter: jianying-job/v2, editable drafts, captions, audio/TTS/ASR, batch recovery, approvals, and MCP stdio/HTTP/SSE. No Python engine or external fork runtime.",
       "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/jianying-edit-plugin@v0.24.0/assets/official-logo.png",
-      "strict": true
+      "interface": {
+        "displayName": "JianYing Edit",
+        "shortDescription": "Rust-only JianYing workflow orchestration",
+        "logo": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/jianying-edit-plugin@v0.24.0/assets/official-logo.png"
+      }
     },
     {
       "name": "minimax-design",
       "source": {
-        "source": "github",
-        "repo": "full-aigc-plugins/minimax-design-plugin",
+        "source": "url",
+        "url": "https://github.com/full-aigc-plugins/minimax-design-plugin.git",
         "ref": "v0.4.3"
       },
-      "description": "Generate MiniMax H3 videos with env-var auth, first/last-frame FL2VA anchoring, resumable v2 queries, 12 externally managed skills, 2 plugin-local skills, commands, and cross-platform credential setup.",
-      "version": "0.4.3",
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_USE"
+      },
       "category": "Creativity",
-      "tags": [
-        "minimax",
-        "hailuo",
-        "video-generation"
-      ],
+      "version": "0.4.3",
+      "description": "Generate MiniMax H3 videos with env-var auth, first/last-frame FL2VA anchoring, resumable v2 queries, 12 externally managed skills, 2 plugin-local skills, commands, and cross-platform credential setup.",
       "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/minimax-design-plugin@v0.4.3/assets/official-logo.png",
-      "strict": true
+      "interface": {
+        "displayName": "MiniMax Design",
+        "shortDescription": "Generate H3 videos with MiniMax — white-model first/last-frame anchoring",
+        "logo": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/minimax-design-plugin@v0.4.3/assets/official-logo.png"
+      }
     },
     {
       "name": "video-factory",
       "source": {
-        "source": "github",
-        "repo": "full-aigc-plugins/video-factory-plugin",
+        "source": "url",
+        "url": "https://github.com/full-aigc-plugins/video-factory-plugin.git",
         "ref": "v0.2.0"
       },
-      "description": "Automatic video editing, composition, synchronized review, recovery, and verified media receipts.",
-      "version": "0.2.0",
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_USE"
+      },
       "category": "Creativity",
-      "tags": [
-        "video",
-        "editing",
-        "receipts"
-      ],
+      "version": "0.2.0",
+      "description": "Automatic video editing, composition, synchronized review, recovery, and verified media receipts.",
       "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/video-factory-plugin@v0.2.0/assets/logo-approved.png",
-      "strict": true
+      "interface": {
+        "displayName": "Video Factory",
+        "shortDescription": "Edit, compose, review, and verify videos",
+        "logo": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/video-factory-plugin@v0.2.0/assets/logo-approved.png"
+      }
     },
     {
       "name": "volcengine-design",
       "source": {
-        "source": "github",
-        "repo": "full-aigc-plugins/volcengine-design-plugin",
+        "source": "url",
+        "url": "https://github.com/full-aigc-plugins/volcengine-design-plugin.git",
         "ref": "v0.1.2"
       },
-      "description": "Volcengine creation suite — Doubao ASR transcription with millisecond word timelines, TTS narration, Seedream images, Seedance video with white-model first/last-frame anchoring.",
-      "version": "0.1.2",
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_USE"
+      },
       "category": "Creativity",
-      "tags": [
-        "volcengine",
-        "doubao",
-        "asr",
-        "tts",
-        "video"
-      ],
+      "version": "0.1.2",
+      "description": "Volcengine creation suite — Doubao ASR transcription with millisecond word timelines, TTS narration, Seedream images, Seedance video with white-model first/last-frame anchoring.",
       "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/volcengine-design-plugin@v0.1.2/assets/official-logo.png",
-      "strict": true
+      "interface": {
+        "displayName": "Volcengine Design",
+        "shortDescription": "Doubao ASR/TTS, image & video generation workflows",
+        "logo": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/volcengine-design-plugin@v0.1.2/assets/official-logo.png"
+      }
     }
-  ]
+  ],
+  "interface": {
+    "displayName": "Full AIGC 插件"
+  }
 }
