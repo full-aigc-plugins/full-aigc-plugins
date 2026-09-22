@@ -90,6 +90,8 @@ Open Settings → Plugins → Create → Add plugin marketplace, enter `partme-a
 
 > The planning repository [`cine-planning`](https://github.com/full-aigc-plugins/cine-planning) (`director` / `script` / `storyboard`, specifications only) is tracked by this marketplace under the `design_baseline_not_released` status and stays out of every installable manifest until its own release boundary is complete.
 
+> The candidate plugin [`content-factory-plugin`](https://github.com/full-aigc-plugins/content-factory-plugin) is tracked in this marketplace's `candidatePlugins` registry. Version `1.0.0-rc.2` remains `release_candidate_blocked`, so it is excluded from the Codex, ZCode, and Kimi installable manifests until its gate passes and an immutable release is published.
+
 ---
 
 ## Architecture

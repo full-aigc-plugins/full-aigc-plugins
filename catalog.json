@@ -16,6 +16,18 @@
       ]
     }
   ],
+  "candidatePlugins": [
+    {
+      "id": "content-factory",
+      "displayName": "Content Factory",
+      "repository": "full-aigc-plugins/content-factory-plugin",
+      "localDirectory": "content-factory-plugin",
+      "version": "1.0.0-rc.2",
+      "status": "release_candidate_blocked",
+      "releaseGate": "docs/verification/release-candidate.json",
+      "description": "Create, review, format, and export governed content for 16 channels."
+    }
+  ],
   "plugins": [
     {
       "id": "maya-design",

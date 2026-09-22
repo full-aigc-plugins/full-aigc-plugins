@@ -16,6 +16,11 @@ const remotePluginIds = new Set(
     .filter((argument) => argument.startsWith("--plugin="))
     .map((argument) => argument.slice("--plugin=".length))
 );
+const filteredCandidateIds = new Set(
+  process.argv
+    .filter((argument) => argument.startsWith("--candidate="))
+    .map((argument) => argument.slice("--candidate=".length))
+);
 
 const releaseRef = (plugin) => `v${plugin.version}`;
 
@@ -85,6 +90,17 @@ const outputs = new Map([
 
 const errors = [];
 const format = (value) => `${JSON.stringify(value, null, 2)}\n`;
+
+if (remotePluginIds.size > 0 && filteredCandidateIds.size > 0) {
+  errors.push("--plugin and --candidate cannot be combined");
+}
+
+if (filteredCandidateIds.size > 0) {
+  const knownCandidateIds = new Set((catalog.candidatePlugins ?? []).map(candidate => candidate.id));
+  for (const candidateId of filteredCandidateIds) {
+    if (!knownCandidateIds.has(candidateId)) errors.push(`unknown --candidate id: ${candidateId}`);
+  }
+}
 
 if (remotePluginIds.size > 0) {
   const knownPluginIds = new Set(catalog.plugins.map((plugin) => plugin.id));
@@ -180,7 +196,7 @@ const validateSkills = (plugin, repo) => {
   }
 };
 
-for (const planningRepo of catalog.planningRepositories ?? []) {
+for (const planningRepo of filteredCandidateIds.size > 0 ? [] : (catalog.planningRepositories ?? [])) {
   const repo = path.join(workspace, planningRepo.localDirectory);
   if (!fs.existsSync(repo)) {
     errors.push(`${planningRepo.name}: missing planning repository ${repo}`);
@@ -199,7 +215,81 @@ for (const planningRepo of catalog.planningRepositories ?? []) {
   }
 }
 
+const installablePluginIds = new Set(catalog.plugins.map(plugin => plugin.id));
+const candidatePluginIds = new Set();
+for (const candidate of catalog.candidatePlugins ?? []) {
+  if (filteredCandidateIds.size > 0 && !filteredCandidateIds.has(candidate.id)) continue;
+  const missingFields = ["id", "displayName", "repository", "localDirectory", "version", "status", "releaseGate"]
+    .filter(field => typeof candidate[field] !== "string" || candidate[field].trim() === "");
+  for (const field of missingFields) {
+    errors.push(`${candidate.id ?? "<candidate>"}: candidate plugin is missing ${field}`);
+  }
+  if (missingFields.length > 0) continue;
+  if (candidatePluginIds.has(candidate.id)) {
+    errors.push(`${candidate.id}: duplicate candidate plugin id`);
+  }
+  candidatePluginIds.add(candidate.id);
+  if (installablePluginIds.has(candidate.id)) {
+    errors.push(`${candidate.id}: blocked candidate must not also be installable`);
+  }
+  if (candidate.status !== "release_candidate_blocked") {
+    errors.push(`${candidate.id}: unsupported candidate status ${candidate.status}`);
+  }
+
+  const repo = path.resolve(workspace, candidate.localDirectory);
+  if (!repo.startsWith(`${workspace}${path.sep}`)) {
+    errors.push(`${candidate.id}: candidate repository must stay inside the managed repositories directory`);
+    continue;
+  }
+  if (!fs.existsSync(repo)) {
+    errors.push(`${candidate.id}: missing candidate repository ${repo}`);
+    continue;
+  }
+
+  const manifestPath = path.join(repo, ".codex-plugin", "plugin.json");
+  if (!fs.existsSync(manifestPath)) {
+    errors.push(`${candidate.id}: missing candidate Codex manifest`);
+  } else {
+    const manifest = JSON.parse(fs.readFileSync(manifestPath, "utf8"));
+    if (manifest.name !== candidate.id) {
+      errors.push(`${candidate.id}: candidate manifest name is ${manifest.name}`);
+    }
+    if (manifest.version !== candidate.version) {
+      errors.push(`${candidate.id}: candidate manifest version ${manifest.version} differs from ${candidate.version}`);
+    }
+  }
+
+  const releaseGatePath = path.resolve(repo, candidate.releaseGate);
+  if (!releaseGatePath.startsWith(`${repo}${path.sep}`)) {
+    errors.push(`${candidate.id}: release gate must stay inside the candidate repository`);
+  } else if (!fs.existsSync(releaseGatePath)) {
+    errors.push(`${candidate.id}: missing release gate ${candidate.releaseGate}`);
+  } else {
+    const releaseGate = JSON.parse(fs.readFileSync(releaseGatePath, "utf8"));
+    if (releaseGate.releaseStatus !== "BLOCKED") {
+      errors.push(`${candidate.id}: candidate registry is only for blocked releases`);
+    }
+    if (releaseGate.currentVersion !== candidate.version) {
+      errors.push(`${candidate.id}: release gate version ${releaseGate.currentVersion} differs from ${candidate.version}`);
+    }
+  }
+}
+
 for (const [file, value] of outputs) {
+  if (filteredCandidateIds.size > 0) {
+    if (!fs.existsSync(file)) {
+      errors.push(`${path.relative(root, file)} is required for candidate validation`);
+      continue;
+    }
+    const current = JSON.parse(fs.readFileSync(file, "utf8"));
+    const identityKey = path.basename(file) === "kimi-marketplace.json" ? "id" : "name";
+    for (const entry of current.plugins ?? []) {
+      if (filteredCandidateIds.has(entry[identityKey])) {
+        errors.push(`${path.relative(root, file)} must exclude blocked candidate ${entry[identityKey]}`);
+      }
+    }
+    continue;
+  }
   const expected = format(value);
   if (mode === "write") {
     fs.mkdirSync(path.dirname(file), { recursive: true });
@@ -211,6 +301,7 @@ for (const [file, value] of outputs) {
 
 for (let index = 0; index < catalog.plugins.length; index += 1) {
   const plugin = catalog.plugins[index];
+  if (filteredCandidateIds.size > 0) continue;
   if (remotePluginIds.size > 0 && !remotePluginIds.has(plugin.id)) continue;
   const previous = catalog.plugins[index - 1];
   if (remotePluginIds.size === 0 && previous
@@ -315,7 +406,15 @@ if (errors.length > 0) {
   process.exit(1);
 }
 
-const validatedPluginCount = remotePluginIds.size > 0
+const validatedPluginCount = filteredCandidateIds.size > 0
+  ? 0
+  : remotePluginIds.size > 0
   ? remotePluginIds.size
   : catalog.plugins.length;
-console.log(`${mode === "write" ? "Synchronized" : "Validated"} ${validatedPluginCount} installable plugins and ${(catalog.planningRepositories ?? []).length} planning repository for Codex, ZCode, and Kimi.`);
+const validatedCandidateCount = filteredCandidateIds.size > 0
+  ? filteredCandidateIds.size
+  : (catalog.candidatePlugins ?? []).length;
+const validatedPlanningCount = filteredCandidateIds.size > 0
+  ? 0
+  : (catalog.planningRepositories ?? []).length;
+console.log(`${mode === "write" ? "Synchronized" : "Validated"} ${validatedPluginCount} installable plugins, ${validatedCandidateCount} blocked candidate plugin, and ${validatedPlanningCount} planning repository for Codex, ZCode, and Kimi.`);

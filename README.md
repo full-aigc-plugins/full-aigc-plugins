@@ -91,13 +91,15 @@ codex plugin add volcengine-design@full-aigc-plugins
 
 > 规划仓 [`cine-planning`](https://github.com/full-aigc-plugins/cine-planning)（`director` / `script` / `storyboard` 纯规格）按 `design_baseline_not_released` 状态跟随本市场管理，在自身发布边界完成前不进入任何可安装清单。
 
+> 候选插件 [`content-factory-plugin`](https://github.com/full-aigc-plugins/content-factory-plugin) 由本市场的 `candidatePlugins` 登记管理。当前版本 `1.0.0-rc.2` 的发布门禁仍为 `release_candidate_blocked`，因此不会进入 Codex、ZCode 或 Kimi 的可安装清单；门禁通过并发布不可变版本后，才可迁入 `plugins`。
+
 ---
 
 ## 架构
 
 ### 市场如何工作
 
-`catalog.json` 是唯一事实源。`scripts/sync-marketplaces.mjs` 从它生成三平台清单，并校验每个插件仓的 skills 目录（frontmatter、命名一致性）与规划仓约束（不得发布 manifest）：
+`catalog.json` 是唯一事实源。`scripts/sync-marketplaces.mjs` 从它生成三平台清单，并校验每个插件仓的 skills 目录（frontmatter、命名一致性）、候选插件的阻断门禁（不得进入安装清单）与规划仓约束（不得发布 manifest）：
 
 ```
 full-aigc-plugins/
