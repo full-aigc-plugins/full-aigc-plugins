@@ -83,13 +83,13 @@ codex plugin add volcengine-design@full-aigc-plugins
 | 🧪 **内容工厂（RC）** | `content-factory` | 1.0.0-rc.2 | 16 渠道的受控内容创作、审阅、排版与导出；预发布测试版，非生产就绪 | [content-factory-plugin](https://github.com/full-aigc-plugins/content-factory-plugin) |
 | 🎨 **即梦画布** | `dreamina-canvas` | 0.2.0 | 结构化 Dreamina 画布与时间线的构建和运行（带审批与恢复） | [dreamina-canvas-plugin](https://github.com/full-aigc-plugins/dreamina-canvas-plugin) |
 | 🖼️ **即梦设计** | `dreamina-design` | 0.6.0 | 即梦图像与视频创作 | [dreamina-design-plugin](https://github.com/full-aigc-plugins/dreamina-design-plugin) |
-| 🏭 **图片工厂** | `image-factory` | 0.3.0 | 图像的发现、批量生产与评估闭环 | [image-factory-plugin](https://github.com/full-aigc-plugins/image-factory-plugin) |
+| 🏭 **图片工厂** | `image-factory` | 0.4.0 | 图像的发现、批量生产与评估闭环 | [image-factory-plugin](https://github.com/full-aigc-plugins/image-factory-plugin) |
 | ✂️ **剪映剪辑** | `jianying-edit` | 0.27.5 | Rust-only 剪映工作流编排与可编辑草稿 | [jianying-edit-plugin](https://github.com/full-aigc-plugins/jianying-edit-plugin) |
 | 🎬 **Maya 制作** | `maya-design` | 0.1.5 | Maya 场景检查与可逆 Playblast，产出经核验的即梦链接 | [maya-design-plugin](https://github.com/full-aigc-plugins/maya-design-plugin) |
 | 🎵 **MiniMax 设计** | `minimax-design` | 0.4.3 | MiniMax H3 视频生成（白模首尾帧锚定） | [minimax-design-plugin](https://github.com/full-aigc-plugins/minimax-design-plugin) |
-| 🎥 **视频工厂** | `video-factory` | 0.3.0 | 视频的剪辑、合成、审校与校验 | [video-factory-plugin](https://github.com/full-aigc-plugins/video-factory-plugin) |
+| 🎥 **视频工厂** | `video-factory` | 0.3.1 | 视频的剪辑、合成、审校与校验 | [video-factory-plugin](https://github.com/full-aigc-plugins/video-factory-plugin) |
 | 🌋 **火山引擎设计** | `volcengine-design` | 0.1.2 | 豆包 ASR/TTS 与图像、视频生成工作流 | [volcengine-design-plugin](https://github.com/full-aigc-plugins/volcengine-design-plugin) |
-| 🔮 **玄机玄学** | `xuanji` | 0.1.0 | 娱乐向术数六科（八字/奇门/紫微/姻缘/风水/塔罗）+ AIGC 成象（观象环 ≤3 轮） | [xuanji-plugin](https://github.com/full-aigc-plugins/xuanji-plugin) |
+| 🔮 **玄机玄学** | `xuanji` | 0.1.1 | 娱乐向术数六科（八字/奇门/紫微/姻缘/风水/塔罗）+ AIGC 成象（观象环 ≤3 轮） | [xuanji-plugin](https://github.com/full-aigc-plugins/xuanji-plugin) |
 
 > 规划仓 [`cine-planning`](https://github.com/full-aigc-plugins/cine-planning)（`director` / `script` / `storyboard` 纯规格）按 `design_baseline_not_released` 状态跟随本市场管理，在自身发布边界完成前不进入任何可安装清单。
 

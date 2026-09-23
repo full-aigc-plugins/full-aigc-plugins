@@ -83,13 +83,13 @@ Open Settings → Plugins → Create → Add plugin marketplace, enter `partme-a
 | 🧪 **Content Factory (RC)** | `content-factory` | 1.0.0-rc.2 | Governed creation, review, formatting, and export for 16 channels; preview testing only, not production-ready | [content-factory-plugin](https://github.com/full-aigc-plugins/content-factory-plugin) |
 | 🎨 **Dreamina Canvas** | `dreamina-canvas` | 0.2.0 | Build and run structured Dreamina canvases and timelines (approval-aware, recoverable) | [dreamina-canvas-plugin](https://github.com/full-aigc-plugins/dreamina-canvas-plugin) |
 | 🖼️ **Dreamina Design** | `dreamina-design` | 0.6.0 | Create images and videos with Dreamina | [dreamina-design-plugin](https://github.com/full-aigc-plugins/dreamina-design-plugin) |
-| 🏭 **Image Factory** | `image-factory` | 0.3.0 | Discover, batch-produce, and evaluate images | [image-factory-plugin](https://github.com/full-aigc-plugins/image-factory-plugin) |
+| 🏭 **Image Factory** | `image-factory` | 0.4.0 | Discover, batch-produce, and evaluate images | [image-factory-plugin](https://github.com/full-aigc-plugins/image-factory-plugin) |
 | ✂️ **JianYing Edit** | `jianying-edit` | 0.27.5 | Rust-only JianYing workflow orchestration and editable drafts | [jianying-edit-plugin](https://github.com/full-aigc-plugins/jianying-edit-plugin) |
 | 🎬 **Maya Production** | `maya-design` | 0.1.5 | Inspect Maya scenes, create reversible Playblasts, produce verified Jimeng links | [maya-design-plugin](https://github.com/full-aigc-plugins/maya-design-plugin) |
 | 🎵 **MiniMax Design** | `minimax-design` | 0.4.3 | Generate H3 videos with MiniMax — white-model first/last-frame anchoring | [minimax-design-plugin](https://github.com/full-aigc-plugins/minimax-design-plugin) |
-| 🎥 **Video Factory** | `video-factory` | 0.3.0 | Edit, compose, review, and verify videos | [video-factory-plugin](https://github.com/full-aigc-plugins/video-factory-plugin) |
+| 🎥 **Video Factory** | `video-factory` | 0.3.1 | Edit, compose, review, and verify videos | [video-factory-plugin](https://github.com/full-aigc-plugins/video-factory-plugin) |
 | 🌋 **Volcengine Design** | `volcengine-design` | 0.1.2 | Doubao ASR/TTS plus image and video generation workflows | [volcengine-design-plugin](https://github.com/full-aigc-plugins/volcengine-design-plugin) |
-| 🔮 **Xuanji Metaphysics** | `xuanji` | 0.1.0 | Entertainment-oriented Chinese metaphysics and tarot workflows with bounded AIGC visualization | [xuanji-plugin](https://github.com/full-aigc-plugins/xuanji-plugin) |
+| 🔮 **Xuanji Metaphysics** | `xuanji` | 0.1.1 | Entertainment-oriented Chinese metaphysics and tarot workflows with bounded AIGC visualization | [xuanji-plugin](https://github.com/full-aigc-plugins/xuanji-plugin) |
 
 > The planning repository [`cine-planning`](https://github.com/full-aigc-plugins/cine-planning) (`director` / `script` / `storyboard`, specifications only) is tracked by this marketplace under the `design_baseline_not_released` status and stays out of every installable manifest until its own release boundary is complete.
 
