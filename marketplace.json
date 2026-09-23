@@ -26,17 +26,19 @@
       "source": {
         "source": "github",
         "repo": "full-aigc-plugins/blender-design-plugin",
-        "ref": "v0.14.1"
+        "ref": "v0.15.0"
       },
       "description": "Design, review, and export Blender scenes through controlled operations, visual milestones, and recovery checkpoints.",
-      "version": "0.14.1",
+      "version": "0.15.0",
+
       "category": "Creativity",
       "tags": [
         "blender",
         "3d",
         "previs"
       ],
-      "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/blender-design-plugin@v0.14.1/assets/official-logo.png",
+      "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/blender-design-plugin@v0.15.0/assets/official-logo.png",
+
       "strict": true
     },
     {
@@ -134,17 +136,19 @@
       "source": {
         "source": "github",
         "repo": "full-aigc-plugins/jianying-edit-plugin",
-        "ref": "v0.27.5"
+        "ref": "v0.26.1"
       },
       "description": "Cross-host JianYing/CapCut workflow orchestration through the checksum-verified Rust jianying-cli Runtime Adapter: jianying-job/v2, editable drafts, captions, audio/TTS/ASR, batch recovery, approvals, and MCP stdio/HTTP/SSE. No Python engine or external fork runtime.",
-      "version": "0.27.5",
+      "version": "0.26.1",
+
       "category": "Creativity",
       "tags": [
         "jianying",
         "capcut",
         "video-editing"
       ],
-      "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/jianying-edit-plugin@v0.27.5/assets/official-logo.png",
+      "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/jianying-edit-plugin@v0.26.1/assets/official-logo.png",
+
       "strict": true
     },
     {
