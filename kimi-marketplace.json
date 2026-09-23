@@ -21,6 +21,11 @@
       "source": "https://github.com/full-aigc-plugins/comfy-design-plugin/releases/tag/v0.2.0"
     },
     {
+      "id": "content-factory",
+      "displayName": "Content Factory (RC)",
+      "source": "https://github.com/full-aigc-plugins/content-factory-plugin/releases/tag/v1.0.0-rc.2"
+    },
+    {
       "id": "dreamina-canvas",
       "displayName": "Dreamina Canvas",
       "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/dreamina-canvas-plugin@v0.2.0/assets/official-logo.png",

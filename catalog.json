@@ -23,9 +23,17 @@
       "repository": "full-aigc-plugins/content-factory-plugin",
       "localDirectory": "content-factory-plugin",
       "version": "1.0.0-rc.2",
-      "status": "release_candidate_blocked",
+      "status": "release_candidate_installable",
       "releaseGate": "docs/verification/release-candidate.json",
-      "description": "Create, review, format, and export governed content for 16 channels."
+      "description": "Create, review, format, and export governed content for 16 channels.",
+      "shortDescription": "Preview governed multi-channel content workflows",
+      "category": "Creativity",
+      "tags": [
+        "content",
+        "editorial",
+        "workflow",
+        "rc"
+      ]
     }
   ],
   "plugins": [

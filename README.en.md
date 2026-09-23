@@ -51,6 +51,7 @@ This repository is the plugin-side counterpart of [Full AIGC Skills](https://git
 codex plugin marketplace add partme-ai/full-aigc-plugins
 codex plugin add blender-design@full-aigc-plugins
 codex plugin add comfy-design@full-aigc-plugins
+codex plugin add content-factory@full-aigc-plugins  # RC preview, testing only
 codex plugin add dreamina-canvas@full-aigc-plugins
 codex plugin add dreamina-design@full-aigc-plugins
 codex plugin add image-factory@full-aigc-plugins
@@ -79,6 +80,7 @@ Open Settings → Plugins → Create → Add plugin marketplace, enter `partme-a
 |--------|----|:-------:|-------|------------|
 | 🧱 **Blender Production** | `blender-design` | 0.13.2 | Controlled Blender production with a four-tab workbench, provider capabilities, visual milestones, and recovery checkpoints | [blender-design-plugin](https://github.com/full-aigc-plugins/blender-design-plugin) |
 | 🎞️ **Comfy Generation** | `comfy-design` | 0.1.3 | Comfy Cloud generation workflows (image / video / audio / 3D) | [comfy-design-plugin](https://github.com/full-aigc-plugins/comfy-design-plugin) |
+| 🧪 **Content Factory (RC)** | `content-factory` | 1.0.0-rc.2 | Governed creation, review, formatting, and export for 16 channels; preview testing only, not production-ready | [content-factory-plugin](https://github.com/full-aigc-plugins/content-factory-plugin) |
 | 🎨 **Dreamina Canvas** | `dreamina-canvas` | 0.2.0 | Build and run structured Dreamina canvases and timelines (approval-aware, recoverable) | [dreamina-canvas-plugin](https://github.com/full-aigc-plugins/dreamina-canvas-plugin) |
 | 🖼️ **Dreamina Design** | `dreamina-design` | 0.6.0 | Create images and videos with Dreamina | [dreamina-design-plugin](https://github.com/full-aigc-plugins/dreamina-design-plugin) |
 | 🏭 **Image Factory** | `image-factory` | 0.2.0 | Discover, batch-produce, and evaluate images | [image-factory-plugin](https://github.com/full-aigc-plugins/image-factory-plugin) |
@@ -90,7 +92,7 @@ Open Settings → Plugins → Create → Add plugin marketplace, enter `partme-a
 
 > The planning repository [`cine-planning`](https://github.com/full-aigc-plugins/cine-planning) (`director` / `script` / `storyboard`, specifications only) is tracked by this marketplace under the `design_baseline_not_released` status and stays out of every installable manifest until its own release boundary is complete.
 
-> The candidate plugin [`content-factory-plugin`](https://github.com/full-aigc-plugins/content-factory-plugin) is tracked in this marketplace's `candidatePlugins` registry. Version `1.0.0-rc.2` remains `release_candidate_blocked`, so it is excluded from the Codex, ZCode, and Kimi installable manifests until its gate passes and an immutable release is published.
+> The candidate plugin [`content-factory-plugin`](https://github.com/full-aigc-plugins/content-factory-plugin) remains independently governed in `candidatePlugins`. Version `1.0.0-rc.2` is exposed to Codex, ZCode, and Kimi as `release_candidate_installable` for controlled test installation; its production release gate remains `BLOCKED`, so it is neither production-ready nor a stable release.
 
 ---
 
@@ -98,7 +100,7 @@ Open Settings → Plugins → Create → Add plugin marketplace, enter `partme-a
 
 ### How the marketplace works
 
-`catalog.json` is the single source of truth. `scripts/sync-marketplaces.mjs` generates the three platform manifests from it and validates each plugin repository's skills directories (frontmatter, naming consistency) and planning-repo constraints (no published manifests):
+`catalog.json` is the single source of truth. `scripts/sync-marketplaces.mjs` generates the three platform manifests from it and validates each plugin repository's skills directories (frontmatter, naming consistency), explicit candidate state (hidden blocked or installable RC), immutable release identity, and planning-repo constraints (no published manifests):
 
 ```
 full-aigc-plugins/
