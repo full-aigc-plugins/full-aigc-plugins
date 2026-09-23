@@ -87,7 +87,7 @@ Open Settings → Plugins → Create → Add plugin marketplace, enter `partme-a
 | ✂️ **JianYing Edit** | `jianying-edit` | 0.27.5 | Rust-only JianYing workflow orchestration and editable drafts | [jianying-edit-plugin](https://github.com/full-aigc-plugins/jianying-edit-plugin) |
 | 🎬 **Maya Production** | `maya-design` | 0.1.5 | Inspect Maya scenes, create reversible Playblasts, produce verified Jimeng links | [maya-design-plugin](https://github.com/full-aigc-plugins/maya-design-plugin) |
 | 🎵 **MiniMax Design** | `minimax-design` | 0.4.3 | Generate H3 videos with MiniMax — white-model first/last-frame anchoring | [minimax-design-plugin](https://github.com/full-aigc-plugins/minimax-design-plugin) |
-| 🎥 **Video Factory** | `video-factory` | 0.3.1 | Edit, compose, review, and verify videos | [video-factory-plugin](https://github.com/full-aigc-plugins/video-factory-plugin) |
+| 🎥 **Video Factory** | `video-factory` | 0.3.2 | Edit, compose, review, and verify videos | [video-factory-plugin](https://github.com/full-aigc-plugins/video-factory-plugin) |
 | 🌋 **Volcengine Design** | `volcengine-design` | 0.1.2 | Doubao ASR/TTS plus image and video generation workflows | [volcengine-design-plugin](https://github.com/full-aigc-plugins/volcengine-design-plugin) |
 | 🔮 **Xuanji Metaphysics** | `xuanji` | 0.1.1 | Entertainment-oriented Chinese metaphysics and tarot workflows with bounded AIGC visualization | [xuanji-plugin](https://github.com/full-aigc-plugins/xuanji-plugin) |
 
