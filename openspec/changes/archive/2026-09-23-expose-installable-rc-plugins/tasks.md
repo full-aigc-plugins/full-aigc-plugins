@@ -14,6 +14,6 @@
 
 - [x] 3.1 Update Chinese and English installation/catalog documentation to identify Content Factory as an installable RC whose production gate remains blocked.
 - [x] 3.2 Run focused tests, full repository tests, local synchronization validation, candidate validation, remote release validation, and strict OpenSpec validation.
-- [ ] 3.3 Archive the verified OpenSpec change so the canonical specifications reflect installable RC governance.
-- [ ] 3.4 Commit and push the isolated change, then verify the exact remote commit and CI result.
-- [ ] 3.5 Refresh the configured central marketplace and perform a real Codex RC installation/readback test.
+- [x] 3.3 Archive the verified OpenSpec change so the canonical specifications reflect installable RC governance.
+- [x] 3.4 Commit and push the isolated change, verify the exact remote commit, and record that this marketplace repository has no GitHub Actions workflow.
+- [x] 3.5 Refresh the configured central marketplace and perform a real Codex RC installation/readback test.
