@@ -170,17 +170,17 @@
       "source": {
         "source": "github",
         "repo": "full-aigc-plugins/video-factory-plugin",
-        "ref": "v0.3.0"
+        "ref": "v0.3.1"
       },
       "description": "Automatic video editing, composition, synchronized review, recovery, and verified media receipts.",
-      "version": "0.3.0",
+      "version": "0.3.1",
       "category": "Creativity",
       "tags": [
         "video",
         "editing",
         "receipts"
       ],
-      "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/video-factory-plugin@v0.3.0/assets/logo-approved.png",
+      "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/video-factory-plugin@v0.3.1/assets/logo-approved.png",
       "strict": true
     },
     {
@@ -208,10 +208,10 @@
       "source": {
         "source": "github",
         "repo": "full-aigc-plugins/xuanji-plugin",
-        "ref": "v0.1.0"
+        "ref": "v0.1.1"
       },
       "description": "Entertainment-grade Chinese metaphysics: Bazi, Qimen, Ziwei, marriage lots, Fengshui, and Tarot with script-verified chart computation and optional AIGC imagery.",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "category": "Creativity",
       "tags": [
         "bazi",
@@ -222,7 +222,7 @@
         "divination",
         "entertainment"
       ],
-      "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/xuanji-plugin@v0.1.0/assets/logo.png",
+      "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/xuanji-plugin@v0.1.1/assets/logo.png",
       "strict": true
     }
   ]
