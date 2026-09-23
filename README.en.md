@@ -78,7 +78,7 @@ Open Settings → Plugins → Create → Add plugin marketplace, enter `partme-a
 
 | Plugin | ID | Version | Focus | Repository |
 |--------|----|:-------:|-------|------------|
-| 🧱 **Blender Production** | `blender-design` | 0.14.1 | Controlled Blender production with a four-tab workbench, provider capabilities, visual milestones, and recovery checkpoints | [blender-design-plugin](https://github.com/full-aigc-plugins/blender-design-plugin) |
+| 🧱 **Blender Production** | `blender-design` | 0.15.0 | Controlled Blender production with a four-tab workbench, provider capabilities, visual milestones, and recovery checkpoints; adds `blender-ai-replication` (LLM + VLM critic reference-image replication) | [blender-design-plugin](https://github.com/full-aigc-plugins/blender-design-plugin) |
 | 🎞️ **Comfy Generation** | `comfy-design` | 0.2.0 | Comfy Cloud generation workflows (image / video / audio / 3D) | [comfy-design-plugin](https://github.com/full-aigc-plugins/comfy-design-plugin) |
 | 🧪 **Content Factory (RC)** | `content-factory` | 1.0.0-rc.2 | Governed creation, review, formatting, and export for 16 channels; preview testing only, not production-ready | [content-factory-plugin](https://github.com/full-aigc-plugins/content-factory-plugin) |
 | 🎨 **Dreamina Canvas** | `dreamina-canvas` | 0.2.0 | Build and run structured Dreamina canvases and timelines (approval-aware, recoverable) | [dreamina-canvas-plugin](https://github.com/full-aigc-plugins/dreamina-canvas-plugin) |

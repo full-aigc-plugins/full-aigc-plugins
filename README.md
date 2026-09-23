@@ -78,7 +78,7 @@ codex plugin add volcengine-design@full-aigc-plugins
 
 | 插件 | ID | 版本 | 定位 | 仓库 |
 |------|----|:----:|------|------|
-| 🧱 **Blender 制作** | `blender-design` | 0.14.1 | Blender 场景的受控设计、审阅与导出（四 Tab 工作台、供应商能力、视觉里程碑与恢复检查点） | [blender-design-plugin](https://github.com/full-aigc-plugins/blender-design-plugin) |
+| 🧱 **Blender 制作** | `blender-design` | 0.15.0 | Blender 场景的受控设计、审阅与导出（四 Tab 工作台、供应商能力、视觉里程碑与恢复检查点）；新增 `blender-ai-replication`（LLM + VLM-critic 复刻参考图） | [blender-design-plugin](https://github.com/full-aigc-plugins/blender-design-plugin) |
 | 🎞️ **Comfy 生成** | `comfy-design` | 0.2.0 | Comfy Cloud 生成工作流（图像 / 视频 / 音频 / 3D） | [comfy-design-plugin](https://github.com/full-aigc-plugins/comfy-design-plugin) |
 | 🧪 **内容工厂（RC）** | `content-factory` | 1.0.0-rc.2 | 16 渠道的受控内容创作、审阅、排版与导出；预发布测试版，非生产就绪 | [content-factory-plugin](https://github.com/full-aigc-plugins/content-factory-plugin) |
 | 🎨 **即梦画布** | `dreamina-canvas` | 0.2.0 | 结构化 Dreamina 画布与时间线的构建和运行（带审批与恢复） | [dreamina-canvas-plugin](https://github.com/full-aigc-plugins/dreamina-canvas-plugin) |
