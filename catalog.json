@@ -139,7 +139,7 @@
       "displayName": "JianYing Edit",
       "repository": "full-aigc-plugins/jianying-edit-plugin",
       "localDirectory": "jianying-edit-plugin",
-      "version": "0.27.8",
+      "version": "0.27.9",
 
       "description": "Cross-host JianYing/CapCut workflow orchestration through the checksum-verified Rust jianying-cli Runtime Adapter: jianying-job/v2, editable drafts, captions, audio/TTS/ASR, batch recovery, approvals, and MCP stdio/HTTP/SSE. No Python engine or external fork runtime.",
       "shortDescription": "Rust-only JianYing workflow orchestration",
