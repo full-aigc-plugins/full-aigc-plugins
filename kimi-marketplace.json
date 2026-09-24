@@ -17,8 +17,8 @@
     {
       "id": "comfy-design",
       "displayName": "Comfy Design",
-      "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/comfy-design-plugin@v0.2.0/assets/official-logo.png",
-      "source": "https://github.com/full-aigc-plugins/comfy-design-plugin/releases/tag/v0.2.0"
+      "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/comfy-design-plugin@v0.3.0/assets/official-logo.png",
+      "source": "https://github.com/full-aigc-plugins/comfy-design-plugin/releases/tag/v0.3.0"
     },
     {
       "id": "content-factory",

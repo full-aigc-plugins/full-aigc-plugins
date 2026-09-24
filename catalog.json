@@ -74,9 +74,9 @@
       "displayName": "Comfy Design",
       "repository": "full-aigc-plugins/comfy-design-plugin",
       "localDirectory": "comfy-design-plugin",
-      "version": "0.2.0",
-      "description": "Generate images, video, audio, and 3D, search models and nodes, and run Comfy Cloud workflows through MCP.",
-      "shortDescription": "Comfy Cloud generation workflows",
+      "version": "0.3.0",
+      "description": "Generate images, video, audio, and 3D through a local ComfyUI MCP, with Comfy Cloud as an opt-in escalation for partner models and uploads.",
+      "shortDescription": "Local-first ComfyUI generation workflows",
       "category": "Creativity",
       "logo": "assets/official-logo.png",
       "tags": [
