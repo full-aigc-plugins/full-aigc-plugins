@@ -44,17 +44,17 @@
       "source": {
         "source": "github",
         "repo": "full-aigc-plugins/comfy-design-plugin",
-        "ref": "v0.3.0"
+        "ref": "v0.5.0"
       },
       "description": "Generate images, video, audio, and 3D through a local ComfyUI MCP, with Comfy Cloud as an opt-in escalation for partner models and uploads.",
-      "version": "0.3.0",
+      "version": "0.5.0",
       "category": "Creativity",
       "tags": [
         "comfy",
         "comfyui",
         "workflow"
       ],
-      "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/comfy-design-plugin@v0.3.0/assets/official-logo.png",
+      "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/comfy-design-plugin@v0.5.0/assets/official-logo.png",
       "strict": true
     },
     {
